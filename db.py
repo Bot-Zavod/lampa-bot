@@ -8,7 +8,50 @@ class DBInterface:
     def __init__(self, path):
         self.conn = sqlite3.connect(path, check_same_thread = False)
         self.cursor = self.conn.cursor()
-        self.admins = []#СЮда просто пихаем админов и все
+        self.admins = []#Сюда просто пихаем админов и все
+
+        sql_tables = [
+            # Payments table    
+            """
+            CREATE TABLE IF NOT EXISTS `Payments` (
+            `payment_id` integer PRIMARY KEY,
+            `chat_id` integer,
+            `term` varchar(255),
+            `create_date` datetime
+            )
+            """,
+
+            # Subscribers table  
+            """
+            CREATE TABLE IF NOT EXISTS `Subscribers` (
+            `chat_id` integer PRIMARY KEY,
+            `username` varchar(255),
+            `email` varchar(255),
+            `end_date` date
+            )
+            """,
+
+            # Passes table  
+            """
+            CREATE TABLE IF NOT EXISTS `Passes` (
+            `pass_id` integer PRIMARY KEY AUTOINCREMENT,
+            `chat_id` integer,
+            `create_date` date
+            )
+            """,
+
+            # Conversations table  
+            """
+            CREATE TABLE IF NOT EXISTS `Conversations` (
+            `conv_id` integer PRIMARY KEY,
+            `create_date` date
+            );
+            """
+        ]
+
+        for sql in sql_tables:
+            self.cursor.execute(sql)
+            self.conn.commit()
 
     def checkUserApply(self, chat_id):
         """ Checks whether the user can co-talk """
@@ -56,7 +99,7 @@ class DBInterface:
             self.cursor.execute(sql, args)
             data = True
         except:
-            print(f"Your request newPass {payment_id}, {chat_id} failed;")
+            print(f"Your request {chat_id} failed;")
         finally:
             self.conn.commit()
         return False
@@ -70,18 +113,20 @@ class DBInterface:
             self.cursor.execute(sql, args)
             data = True
         except:
-            print(f"Your request newSubscribe {payment_id} failed")
+            print(f"Your request newSubscribe {chat_id} failed")
         finally:
             self.conn.commit()
         return data
+
 
     def updateSubscribeDate(self, chat_id, term):
         sql = "UPDATE Subscribers SET end_date = DATE(end_date,(?)) WHERE chat_id = (?) ;"
         args = [term, chat_id]
 
+
     def newPayment(self, payment_id, chat_id, term):
         sql = "INSERT INTO Payments VALUES (?, ?, ?, datetime('now'))"
-        args = [payment_id,, chat_id, term]
+        args = [payment_id, chat_id, term]
         data = False
         try:
             self.cursor.execute(sql, args)
@@ -97,7 +142,7 @@ class DBInterface:
         # conv_id must be Auto Increment
         sql = "INSERT INTO Conversations VALUES (DATE())"
         try:
-            self.cursor.execute(sql, args)
+            self.cursor.execute(sql)
             cursor = self.cursor.fetchall()
         except sqlite3.IntegrityError:
             print("ERROR while checking the user")
@@ -106,7 +151,7 @@ class DBInterface:
             print('FINALY')
 
 
-    def getConversationsCount(seld):
+    def getConversationsCount(self):
         sql = "SELECT COUNT(*) FROM Conversations"
         try:
             self.cursor.execute(sql)
@@ -155,6 +200,4 @@ DB = start_database()
 
 
 if __name__ == "__main__":
-    db_path = "db.db"
-    DB = DBInterface(db_path)
     print(DB.checkUserApply(1))

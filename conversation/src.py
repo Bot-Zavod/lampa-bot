@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 def main():
 
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater("1200188911:AAGUU56MpLmA-uk-HjjrYX-mCuYAptas004", use_context=True)
 
     dp = updater.dispatcher
 

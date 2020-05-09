@@ -1,10 +1,27 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, PreCheckoutQueryHandler, CallbackQueryHandler, ConversationHandler
-from telegram import LabeledPrice, InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
+from telegram.ext import (
+	Updater, 
+	CommandHandler, 
+	MessageHandler, 
+	Filters, 
+	PreCheckoutQueryHandler, 
+	CallbackQueryHandler, 
+	ConversationHandler
+)
+from telegram import (
+	LabeledPrice, 
+	InlineKeyboardMarkup, 
+	InlineKeyboardButton, 
+	ParseMode
+)
 import logging
+from os import environ
 from requests import get
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+from dotenv import load_dotenv
+load_dotenv()
 
 USERS = {}
 
@@ -146,7 +163,7 @@ def precheckout_callback(update, context):
 
 
 if __name__ == '__main__':
-	updater = Updater(token='728358108:AAEd0cC2S2LW8HvBSuFbQP0EoA-jWJ5XyUQ', use_context=True)
+	updater = Updater(token=environ["API_KEY"], use_context=True)
 	dispatcher = updater.dispatcher
 
 	dispatcher.add_handler(CommandHandler('start', start))
