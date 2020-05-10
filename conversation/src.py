@@ -1,4 +1,7 @@
 import logging
+import chat
+from states import States
+from chat import *
 
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
@@ -9,9 +12,8 @@ from telegram.ext import (
     ConversationHandler,
 )
 
-from . import States
-from .handlers import *
-from . import to_regex
+from handlers import *
+from helpers import to_regex
 from settings import *
 
 # Enable logging
@@ -24,6 +26,8 @@ logger = logging.getLogger(__name__)
 
 def main():
 
+    print("Starting")
+
     updater = Updater(TOKEN, use_context=True)
 
     dp = updater.dispatcher
@@ -31,13 +35,11 @@ def main():
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
         states={
-            States.FRUIT: [MessageHandler(Filters.regex(to_regex(fruit_kb)), fruit,)],
-            States.SOUND: [MessageHandler(Filters.regex(to_regex(sound_kb)), sound,),],
-            States.ANIMAL: [
-                MessageHandler(Filters.regex(to_regex(animal_kb)), animal,),
-            ],
+            States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
+            States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
+            States.ANIMAL: [MessageHandler(Filters.regex(to_regex(sound_kb)), animal,)],
             States.CONSENT: [
-                MessageHandler(Filters.regex(to_regex(consent_kb)), consent,)
+                MessageHandler(Filters.regex(to_regex(animal_kb)), consent,)
             ],
             States.STICKERS: [
                 MessageHandler(Filters.regex(to_regex(stickers_kb)), stickers,)
@@ -46,14 +48,18 @@ def main():
                 MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
             ],
             States.WHY_LEAVE: [
-                MessageHandler(Filters.regex(to_regex(why_leave_kb)), why_leave,)
+                MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
+            ],
+            States.IN_CONNECTION: [
+                chat_handler
             ],
         },
+        fallbacks=[CommandHandler('stop', done)]
     )
 
     dp.add_handler(conv_handler)
 
-    dp.add_error_handler(error)
+    # dp.add_error_handler(error)
 
     updater.start_polling()
 

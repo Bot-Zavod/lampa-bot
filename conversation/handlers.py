@@ -1,5 +1,6 @@
-from . import States
-from .constants import *
+from states import States
+from constants import *
+from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove)
 
 
 def start(update, context):
@@ -11,7 +12,7 @@ def start(update, context):
             пройди lampa-тест, чтобы мы могли почувствовать твой current mood
             (настроение и состояние)
         """,
-        reply_keyboard,
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
     )
     if True:  # is_admin():
         return States.FRUIT
@@ -26,7 +27,7 @@ def fruit(update, context):
         """
         Какой ты сейчас фрукт?
         """,
-        reply_keyboard,
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
     )
 
     return States.SOUND
@@ -39,7 +40,7 @@ def sound(update, context):
         """
         Какой ты сейчас звук?
         """,
-        reply_keyboard,
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
     )
 
     return States.ANIMAL
@@ -52,7 +53,7 @@ def animal(update, context):
         """
         Какое ты сейчас животное?
         """,
-        reply_keyboard,
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
     )
 
     return States.CONSENT
@@ -61,24 +62,13 @@ def animal(update, context):
 def consent(update, context):
     reply_keyboard = consent_kb
 
-    update.message.reply_text(
-        """
-        Сейчас мы соединим тебя с человеком,
-         который чувствует себя тем же фруктом, звуком и животным, что и ты…\n
-        Ты не увидишь ни фото, ни имени, но ты почувствуешь,
-         что где-то в мире есть человек, которому не все равно, как твои дела)\n
-        Этому человеку сейчас тоже грустно.
-         В такие моменты очень важно чувствовать, что ты не один.\n
-        Попробуй узнать, что у него случилось и немного поддержать. Он поддержит тебя тоже,
-         и вам обоим станет немного теплее, светлее и радостнее )
-        """,
-        reply_keyboard,
-    )
-    if True:  # is_first_time():
+    update.message.reply_text('Я буду внимательно, этично и тепло относиться к человеку на том конце чата.',
+                             reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True, one_time_keyboard=True))
+
+    if False:  # is_first_time():
         return States.STICKERS
     else:
         return States.IN_CONNECTION
-
 
 def stickers(update, context):
     reply_keyboard = stickers_kb
@@ -87,7 +77,7 @@ def stickers(update, context):
         """
         Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?
         """,
-        reply_keyboard,
+        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
     )
 
     return States.IN_CONNECTION
@@ -100,7 +90,7 @@ def current_mood(update, context):
         """
         Как сейчас твое настроение?
         """,
-        reply_keyboard,
+        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
     )
 
     return States.WHY_LEAVE
@@ -112,7 +102,7 @@ def why_leave(update, context):
         """
         Почему ты сейчас уходишь из чата?
         """,
-        reply_keyboard,
+        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
     )
 
     return States.IDLE
