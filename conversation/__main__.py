@@ -40,18 +40,18 @@ def main():
             States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
             States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
             States.ANIMAL: [MessageHandler(Filters.regex(to_regex(sound_kb)), animal,)],
+            States.CURRENT_MOOD: [
+                MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
+            ],
             States.CONSENT: [
                 MessageHandler(Filters.regex(to_regex(animal_kb)), consent,)
             ],
             States.STICKERS: [
-                MessageHandler(Filters.regex(to_regex(consent_kb)), stickers,)
+                MessageHandler(Filters.regex(to_regex(animal_kb)), stickers,)
             ],
             States.STICKERS_ANSW: [
                 MessageHandler(Filters.regex("^Хочу$"), stickers_yes,),
-                MessageHandler(Filters.regex("^Не хоч$"), stickers_no,),
-            ],
-            States.CURRENT_MOOD: [
-                MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
+                MessageHandler(Filters.regex("^Не хочу$"), stickers_no,),
             ],
             States.WHY_LEAVE: [
                 MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)

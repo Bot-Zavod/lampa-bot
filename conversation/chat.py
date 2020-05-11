@@ -89,7 +89,7 @@ def done(update, context):
 
 chat_handler = ConversationHandler(
     allow_reentry=True,
-    entry_points=[MessageHandler(Filters.regex(to_regex(consent_kb)), start)],
+    entry_points=[MessageHandler(Filters.regex(to_regex(consent_kb + stickers_kb)), start)],
     states={
         CONVERSATION: [
             MessageHandler(Filters.text & (~Filters.command), answer),
