@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+Vargan-API.json
 
 # C extensions
 *.so
