@@ -40,8 +40,8 @@ class DBInterface:
             # Conversations table
             """
             CREATE TABLE IF NOT EXISTS `Conversations` (
-            `conv_id` integer PRIMARY KEY NOT NULL,
-            `create_date` date NOT NULL
+            "conv_id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	        "create_date"	date NOT NULL
             );
             """,
         ]
@@ -50,155 +50,172 @@ class DBInterface:
             self.cursor.execute(sql)
             self.conn.commit()
 
-    def checkUserApply(self, chat_id):
-        """ Checks whether the user can co-talk """
-        sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) and end_date >= DATE())"
+    # check iff the user has an active subscription
+    def checkUserSubscribed(self, chat_id: int) -> bool:
+        # compares the date today and subscribtion date
+        sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) AND end_date >= DATE())"
         args = [chat_id]
         res = False
         try:
             self.cursor.execute(sql, args)
             cursor = self.cursor.fetchall()[0][0]
-            res = True if cursor == 1 else False
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
+            # turn answer into boolean
+            res = bool(cursor)
+        except Exception as e:
+            print(f"[ERROR] checkUserSubscribed\n{e}")
         finally:
             self.conn.commit()
-            print("FINALY")
             return res
 
-    def checkFreePass(self, chat_id):
-        """Checks whether the user can make a free conversation"""
-        """ 1. Чтоб True у юзера должно быть меньше 3х или меньше 1го в день"""
-        res = None
+    # Checks whether the user can make a free conversation
+    def checkFreePass(self, chat_id: int) -> bool:
+        res = True
         try:
+            # checks if he had already used bot 3 times
             self.cursor.execute(
                 "SELECT COUNT(*) FROM Passes WHERE chat_id = (?)", [chat_id]
             )
             data = self.cursor.fetchall()[0][0]
-            if data <= 3:
+            print(data)
+            if data < 3:
                 res = True
             else:
+                # if he had used it for 3 times checks if he had used it today
                 self.cursor.execute(
-                    "SELECT EXISTS(SELECT * FROM Passes WHERE chat_id = (?) AND create_date = DATE()",
+                    "SELECT EXISTS(SELECT * FROM Passes WHERE chat_id = (?) AND create_date = DATE('now'))",
                     [chat_id],
                 )
                 data = self.cursor.fetchall()[0][0]
-                res = False if data == 1 else True
-        except:
-            print(f"Your request get_payment_id {chat_id} failed")
+                res = not bool(data)
+        except Exception as e:
+            print(f"[ERROR] checkFreePass\n{e}\n")
         finally:
             self.conn.commit()
-        return res
+            return res
 
-    def newPass(self, chat_id):
-        """create a new pass"""
+    # create a new pass with user chat_id
+    def newPass(self, chat_id: int) -> None:
         sql = "INSERT INTO Passes (chat_id, create_date) VALUES (?, DATE())"
         args = [chat_id]
-        data = False
         try:
             self.cursor.execute(sql, args)
-            data = True
-        except:
-            print(f"Your request {chat_id} failed;")
+        except Exception as e:
+            print(f"[ERROR] newPass\n{e}\n")
         finally:
             self.conn.commit()
-        return False
 
-    def newSubscriber(self, chat_id, username, email):
-        sql = "INSERT INTO Subscribers VALUES (?, ?, ?, DATE())"
+        # create a new pass with user chat_id
+
+    # get end date of user subscribtion
+    def getEndDateSubscribed(self, chat_id: int) -> str:
+        sql = "SELECT end_date FROM Subscribers WHERE chat_id = (?)"
+        args = [chat_id]
+        try:
+            self.cursor.execute(sql, args)
+            date = self.cursor.fetchall()[0][0]
+        except Exception as e:
+            print(f"[ERROR] getEndDateSubscribed\n{e}")
+        finally:
+            self.conn.commit()
+            return date
+
+    # create a new subscription
+    def newSubscriber(self, chat_id: int, username: str, email: str, term: str) -> None:
+        dates = {
+            "3days":"+3 days",
+            "week":"+7 days", 
+            "month": "+1 month"
+        }
+        sql = "INSERT OR REPLACE INTO Subscribers VALUES (?, ?, ?, "
+        # check if he subscribed now
+        if self.checkUserSubscribed(chat_id):
+            # if yes get the last date of his subscribtion
+            date = self.getEndDateSubscribed(chat_id)
+            # add new days to his last day
+            sql += f"DATE('{date}','{dates[term]}'))"
+        else:
+            # if no use today as the dase
+            sql += f"DATE('now','{dates[term]}'))"
         args = [chat_id, username, email]
-        data = False
         try:
             self.cursor.execute(sql, args)
-            data = True
-        except:
-            print(f"Your request newSubscribe {chat_id} failed")
+        except Exception as e:
+            print(f"[ERROR] newSubscriber\n{e}\n")
         finally:
             self.conn.commit()
-        return data
 
-    def updateSubscribeDate(self, chat_id, term):
-        sql = (
-            "UPDATE Subscribers SET end_date = DATE(end_date,(?)) WHERE chat_id = (?) ;"
-        )
-        args = [term, chat_id]
-
-    def newPayment(self, chat_id, term):
-        sql = "INSERT INTO Payments (chat_id, term, create_date)VALUES (?, ?, datetime('now'))"
-        args = [chat_id, term]
-        data = False
+    # create new payment data row
+    def newPayment(self, payment_id: int, chat_id: int, term: str) -> None:
+        sql = "INSERT INTO Payments (payment_id, chat_id, term, create_date)\
+             VALUES (?, ?, ?, datetime('now'))"
+        args = [payment_id, chat_id, term]
         try:
             self.cursor.execute(sql, args)
-            data = True
-        except:
-            print(f"Your request newPayment has failed")
+        except Exception as e:
+            print(f"[ERROR] newPayment\n{e}\n")
         finally:
             self.conn.commit()
-        return data
 
-    def newConversation(self):
-        # conv_id must be Auto Increment
-        sql = "INSERT INTO Conversations VALUES (DATE())"
+    # write a new conversation today
+    def newConversation(self) -> None:
+        sql = "INSERT INTO Conversations (create_date) VALUES (DATE('now'))"
         try:
             self.cursor.execute(sql)
-            cursor = self.cursor.fetchall()
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
+        except Exception as e:
+            print(f"[ERROR] newConversation\n{e}\n")
         finally:
             self.conn.commit()
-            print("FINALY")
 
-    def getConversationsCount(self):
+    # return number of conversations
+    def getConversationsCount(self) -> int:
         sql = "SELECT COUNT(*) FROM Conversations"
         try:
             self.cursor.execute(sql)
             data = self.cursor.fetchall()[0][0]
         except Exception as e:
-            print(f"ERROR getConversationsCount\n{e}")
+            print(f"ERROR getConversationsCount\n{e}\n")
         finally:
             self.conn.commit()
             return data
 
-    def getAllUsersID(self, table="Passes"):
-        """Must return list of chat_id"""
-        """U can change table to get actual from Passes and Subscribers"""
-        sql = "SELECT DISTINCT chat_id FROM Passes"
-        args = [table]
+    # return list of users chat_id who passed the test
+    def getAllUsersID(self, table="Passes") -> list:
+        # you can change table to get actual from Passes and Subscribers
+        sql = f"SELECT DISTINCT chat_id FROM {table}"
         try:
             self.cursor.execute(sql)
             cursor = self.cursor.fetchall()
+            users_ids = [chat_id[0] for chat_id in cursor]
         except Exception as e:
-            print(f"ERROR getAllUsersID\n{e}")
+            print(f"ERROR getAllUsersID\n{e}\n")
         finally:
             self.conn.commit()
-            return list(cursor)
+            return users_ids
 
-    def getCountByTerm(self, term):
-        # must return INT number ( count of records )
-        sql = f"SELECT COUNT(*) FROM Payments WHERE term=\"{term}\""
-        # args = [term]
+    # count payments by subscription term
+    def getCountByTerm(self, term: str) -> int:
+        sql = f"SELECT COUNT(*) FROM Payments WHERE term='{term}'"
         try:
             self.cursor.execute(sql)
             data = self.cursor.fetchall()[0][0]      
         except Exception as e:
-            print(f"ERROR getCountByTerm\n{e}")
+            print(f"ERROR getCountByTerm\n{e}\n")
         finally:
             self.conn.commit()
             return data
 
-
-    def getDates(self):
-        # Must returm list of all dates fields
-        sql = "SELECT DATE(DATE) FROM Payments;"
-        try:
-            self.cursor.execute(sql)
-            data = self.cursor.fetchall()[0]            
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
-        finally:
-            self.conn.commit()
-            print('FINALY')
-            return data
+    # # returm list of all dates fields
+    # def getDates(self):
+    #     sql = "SELECT DATE(DATE) FROM Payments"
+    #     try:
+    #         self.cursor.execute(sql)
+    #         data = self.cursor.fetchall()[0]            
+    #     except sqlite3.IntegrityError:
+    #         print("ERROR while checking the user")
+    #     finally:
+    #         self.conn.commit()
+    #         print('FINALY')
+    #         return data
 
 
 # setting up the database
@@ -221,8 +238,8 @@ DB = start_database()
 
 
 if __name__ == "__main__":
-    # print(DB.checkUserApply(1))
-    # print(DB.newPayment(12242342342,30))
-    print(DB.checkFreePass(100500),DB.checkUserApply(100500))
-    DB.newPass(100500)
-    print(DB.checkFreePass(100500),DB.checkUserApply(100500))
+
+    # for i in range(2,5):
+    #     print(DB.checkUserSubscribed(i))
+
+    print(DB.getCountByTerm("3days"))
