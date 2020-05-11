@@ -50,11 +50,9 @@ def main():
             States.WHY_LEAVE: [
                 MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
             ],
-            States.IN_CONNECTION: [
-                chat_handler
-            ],
+            States.IN_CONNECTION: [chat_handler],
         },
-        fallbacks=[CommandHandler('stop', done)]
+        fallbacks=[CommandHandler("stop", done)],
     )
 
     dp.add_handler(conv_handler)
