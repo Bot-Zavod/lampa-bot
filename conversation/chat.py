@@ -12,6 +12,9 @@ from .helpers import to_regex
 from .constants import *
 from .states import States
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+from .handlers import *
+from .helpers import to_regex
+from .constants import *
 
 users = TwoWayDict()
 lobby = []
@@ -78,10 +81,8 @@ def done(update, context):
     else:
         update.message.reply_text(chat_finished_text)
     update.message.reply_text(
-        why_leave_text,
-        reply_markup=ReplyKeyboardMarkup(
-            why_leave_kb, resize_keyboard=True
-        ),
+        current_mood_text,
+        reply_markup=ReplyKeyboardMarkup(current_mood_kb, resize_keyboard=True),
     )
     print(users, lobby)
     return ConversationHandler.END
@@ -89,7 +90,7 @@ def done(update, context):
 
 chat_handler = ConversationHandler(
     allow_reentry=True,
-    entry_points=[MessageHandler(Filters.regex(to_regex(consent_kb + stickers_kb)), start)],
+    entry_points=[MessageHandler(Filters.regex(to_regex(consent_kb)), start)],
     states={
         CONVERSATION: [
             MessageHandler(Filters.text & (~Filters.command), answer),
@@ -97,5 +98,5 @@ chat_handler = ConversationHandler(
         ],
     },
     fallbacks=[CommandHandler("stop", done)],
-    map_to_parent={ConversationHandler.END: States.WHY_LEAVE,},
+    map_to_parent={ConversationHandler.END: States.CURRENT_MOOD,},
 )

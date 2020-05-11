@@ -14,8 +14,8 @@ from telegram.ext import (
 
 from .handlers import *
 from .helpers import to_regex
-from .settings import TOKEN
 from .constants import *
+from .settings import TOKEN
 
 # Enable logging
 logging.basicConfig(
@@ -40,9 +40,6 @@ def main():
             States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
             States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
             States.ANIMAL: [MessageHandler(Filters.regex(to_regex(sound_kb)), animal,)],
-            States.CURRENT_MOOD: [
-                MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
-            ],
             States.CONSENT: [
                 MessageHandler(Filters.regex(to_regex(animal_kb)), consent,)
             ],
@@ -53,16 +50,22 @@ def main():
                 MessageHandler(Filters.regex("^Хочу$"), stickers_yes,),
                 MessageHandler(Filters.regex("^Не хочу$"), stickers_no,),
             ],
-            States.WHY_LEAVE: [
-                MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
+            States.CURRENT_MOOD: [
+                # MessageHandler(Filters.text, current_mood,)
+                CommandHandler("cheburek", current_mood)
             ],
-            States.FUNNY: [MessageHandler(Filters.regex(to_regex(start_kb)), funny,)],
+            States.WHY_LEAVE: [
+                MessageHandler(Filters.regex(to_regex(current_mood_kb)), why_leave,)
+            ],
+            States.FUNNY: [
+                MessageHandler(Filters.regex(to_regex(why_leave_kb)), funny,)
+            ],
             States.FUNNY_ANSW: [
                 MessageHandler(Filters.regex("^Мем$"), meme,),
                 MessageHandler(Filters.regex("^Анекдот$"), anecdot,),
                 MessageHandler(Filters.regex("^Выйти$"), why_leave,),
             ],
-            States.IN_CONNECTION: [chat_handler],
+            # States.IN_CONNECTION: [chat_handler],
         },
         fallbacks=[CommandHandler("stop", done)],
         persistent=True,

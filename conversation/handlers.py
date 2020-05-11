@@ -54,12 +54,7 @@ def animal(update, context):
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
 
-    #If not first time
-    # if DB.checkFreePass(update.message.chat_id):
-    #     stickers(update, context)
-    return States.STICKERS
-    # else:
-    #     return States.CONSENT
+    return States.CONSENT
 
 
 def consent(update, context):
@@ -73,32 +68,33 @@ def consent(update, context):
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
 
-    return States.IN_CONNECTION
+    if DB.checkFreePass(update.message.chat_id):
+        return States.STICKERS
+    else:
+        return States.CURRENT_MOOD
 
 
 def stickers(update, context):
     reply_keyboard = stickers_kb
-    if False:
-        res = update.message.reply_text(
-            "Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?",
-            reply_markup=ReplyKeyboardMarkup(
-                reply_keyboard, resize_keyboard=True, one_time_keyboard=True
-            ),
-        )
-        return States.STICKERS_ANSW
-    else:
-        return consent(update, context)
+    res = update.message.reply_text(
+        "Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?",
+        reply_markup=ReplyKeyboardMarkup(
+            reply_keyboard, resize_keyboard=True, one_time_keyboard=True
+        ),
+    )
+
+    return States.STICKERS_ANSW
 
 
 def stickers_yes(update, context):
     update.message.reply_sticker(
         "CAACAgIAAxkBAAPDXrleZo93jyMgBneJBJ9ejDfX9IUAAiUAA0R8oRMzVew1dDSXuhkE"
     )
-    return consent(update, context)
+    return States.CURRENT_MOOD
 
 
 def stickers_no(update, context):
-    return consent(update, context)
+    return States.CURRENT_MOOD
 
 
 def current_mood(update, context):
