@@ -1,3 +1,5 @@
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+
 start_kb = [["Пройти lampa-тест"]]
 
 fruit_kb = [
@@ -58,3 +60,30 @@ why_leave_text = """Почему ты рещил выйти из этого ча
 why_leave_kb = [["1", "2", "3", "4", "5"], ["Другое"]]
 
 funny_kb = [["Мем"], ["Анекдот"], ["Выйти"]]
+
+admin_text = {
+    "hi_boss": "Привет босс, пароль на сегодня\n\n",
+    "sorry": "Сорри, но не ты здесь босс...",
+
+    "not_boss": "Извини, но ты не админ(",
+    "hi_boss": "Админ меню:",
+    "push": "Пуш 💌",
+    "stats": "Статистика 👥", 
+
+    "data":"Подписки:\n3 дня: {sub_1}\nНеделя: {sub_2}\nМесяц: {sub_3}\n\nВсего диалогов: {dialogs}",
+    "push_text":"Напиши сообщение для отправки",
+    "push_submit":"Отправить сообщение?\n\n {answer}",
+    "send":"Отправить 💫",
+    "no_send":"НЕТ 🧨",
+    "push_success":"Сообщение отправлено {user_number} пользователям"
+}
+
+admin_kb = [[admin_text["push"], admin_text["stats"]],
+            [admin_text["back"]]]
+admin_kb_markup = ReplyKeyboardMarkup(admin_kb, resize_keyboard=True)
+
+
+push_kb = [[admin_text["send"], admin_text["no_send"]]]
+push_kb_markup = ReplyKeyboardMarkup(
+        push_kb, resize_keyboard=True, one_time_keyboard=True
+    )

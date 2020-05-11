@@ -10,9 +10,9 @@ def start(update, context):
 
     update.message.reply_text(
         (
-            "Мы рады тебе.)"
-            "пройди lampa-тест, чтобы мы могли почувствовать твой current mood"
-            "(настроение и состояние)"
+            "Мы рады тебе.)\n\
+            пройди lampa-тест, чтобы мы могли почувствовать твой current mood\
+            (настроение и состояние)"
         ),
         reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
     )
