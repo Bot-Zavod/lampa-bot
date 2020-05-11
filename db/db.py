@@ -6,12 +6,12 @@ from os import path, getcwd
 
 class DBInterface:
     def __init__(self, path):
-        self.conn = sqlite3.connect(path, check_same_thread = False)
+        self.conn = sqlite3.connect(path, check_same_thread=False)
         self.cursor = self.conn.cursor()
-        self.admins = []#Сюда просто пихаем админов и все
+        self.admins = []  # Сюда просто пихаем админов и все
 
         sql_tables = [
-            # Payments table    
+            # Payments table
             """
             CREATE TABLE IF NOT EXISTS `Payments` (
             `payment_id` integer PRIMARY KEY,
@@ -20,8 +20,7 @@ class DBInterface:
             `create_date` datetime
             )
             """,
-
-            # Subscribers table  
+            # Subscribers table
             """
             CREATE TABLE IF NOT EXISTS `Subscribers` (
             `chat_id` integer PRIMARY KEY,
@@ -30,8 +29,7 @@ class DBInterface:
             `end_date` date
             )
             """,
-
-            # Passes table  
+            # Passes table
             """
             CREATE TABLE IF NOT EXISTS `Passes` (
             `pass_id` integer PRIMARY KEY AUTOINCREMENT,
@@ -39,14 +37,13 @@ class DBInterface:
             `create_date` date
             )
             """,
-
-            # Conversations table  
+            # Conversations table
             """
             CREATE TABLE IF NOT EXISTS `Conversations` (
             `conv_id` integer PRIMARY KEY,
             `create_date` date
             );
-            """
+            """,
         ]
 
         for sql in sql_tables:
@@ -55,7 +52,7 @@ class DBInterface:
 
     def checkUserApply(self, chat_id):
         """ Checks whether the user can co-talk """
-        sql = 'SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) and end_date >= DATE())'
+        sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) and end_date >= DATE())"
         args = [chat_id]
         res = False
         try:
@@ -66,21 +63,25 @@ class DBInterface:
             print("ERROR while checking the user")
         finally:
             self.conn.commit()
-            print('FINALY')
+            print("FINALY")
             return res
-
 
     def checkFreePass(self, chat_id):
         """Checks whether the user can make a free conversation"""
         """ 1. Чтоб True у юзера должно быть меньше 3х или меньше 1го в день"""
         res = None
         try:
-            self.cursor.execute("SELECT COUNT(*) FROM Passes WHERE chat_id = (?)", [chat_id])
+            self.cursor.execute(
+                "SELECT COUNT(*) FROM Passes WHERE chat_id = (?)", [chat_id]
+            )
             data = self.cursor.fetchall()[0][0]
             if data <= 3:
                 res = True
             else:
-                self.cursor.execute("SELECT EXISTS(SELECT * FROM Passes WHERE chat_id = (?) AND create_date = DATE()", [chat_id])
+                self.cursor.execute(
+                    "SELECT EXISTS(SELECT * FROM Passes WHERE chat_id = (?) AND create_date = DATE()",
+                    [chat_id],
+                )
                 data = self.cursor.fetchall()[0][0]
                 res = False if data == 1 else True
         except:
@@ -88,7 +89,6 @@ class DBInterface:
         finally:
             self.conn.commit()
         return res
-
 
     def newPass(self, pass_id, chat_id):
         """create a new pass"""
@@ -104,7 +104,6 @@ class DBInterface:
             self.conn.commit()
         return False
 
-    
     def newSubscriber(self, chat_id, username, email):
         sql = "INSERT INTO Subscribers VALUES (?, ?, ?, DATE())"
         args = [chat_id, username, email]
@@ -118,11 +117,11 @@ class DBInterface:
             self.conn.commit()
         return data
 
-
     def updateSubscribeDate(self, chat_id, term):
-        sql = "UPDATE Subscribers SET end_date = DATE(end_date,(?)) WHERE chat_id = (?) ;"
+        sql = (
+            "UPDATE Subscribers SET end_date = DATE(end_date,(?)) WHERE chat_id = (?) ;"
+        )
         args = [term, chat_id]
-
 
     def newPayment(self, payment_id, chat_id, term):
         sql = "INSERT INTO Payments VALUES (?, ?, ?, datetime('now'))"
@@ -137,7 +136,6 @@ class DBInterface:
             self.conn.commit()
         return data
 
-
     def newConversation(self):
         # conv_id must be Auto Increment
         sql = "INSERT INTO Conversations VALUES (DATE())"
@@ -148,26 +146,24 @@ class DBInterface:
             print("ERROR while checking the user")
         finally:
             self.conn.commit()
-            print('FINALY')
-
+            print("FINALY")
 
     def getConversationsCount(self):
         sql = "SELECT COUNT(*) FROM Conversations"
         try:
             self.cursor.execute(sql)
-            data = self.cursor.fetchall()[0]            
+            data = self.cursor.fetchall()[0]
         except sqlite3.IntegrityError:
             print("ERROR while checking the user")
         finally:
             self.conn.commit()
-            print('FINALY')
+            print("FINALY")
             return data
-
 
     def getAllUsersID(self, table="Passes"):
         """Must return list of chat_id"""
         """U can change table to get actual from Passes and Subscribers"""
-        sql = 'SELECT DISTINCT chat_id FROM (?)'
+        sql = "SELECT DISTINCT chat_id FROM (?)"
         args = [table]
         try:
             self.cursor.execute(sql, args)
@@ -176,7 +172,7 @@ class DBInterface:
             print("ERROR while checking the user")
         finally:
             self.conn.commit()
-            print('FINALY')
+            print("FINALY")
             return list(cursor)
 
 
@@ -196,6 +192,8 @@ def start_database():
     full_path = path.abspath(path.expanduser(path.expandvars(database)))
     DB = DBInterface(full_path)
     return DB
+
+
 DB = start_database()
 
 

@@ -8,5 +8,5 @@ def to_regex(reply_keyboard: List[str]) -> str:
         for j in i:
             result += j
             result += "|"
-    result = result[:-1]+ ")$"
+    result = result[:-1] + ")$"
     return result
