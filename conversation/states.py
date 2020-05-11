@@ -12,6 +12,9 @@ class States(Enum):
     READY = 104
     BEFORE_CHAT = 200
     STICKERS = 201
+    STICKERS_ANSW = 202
     IN_CONNECTION = 300
     CURRENT_MOOD = 401
     WHY_LEAVE = 402
+    FUNNY = 500
+    FUNNY_ANSW = 501

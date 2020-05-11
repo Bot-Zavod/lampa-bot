@@ -1,7 +1,9 @@
 from .states import States
 from .constants import *
-from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Bot
 from db import *
+from memes import get_meme, get_anecdot
+
 
 def start(update, context):
     reply_keyboard = start_kb
@@ -74,14 +76,24 @@ def consent(update, context):
 
 def stickers(update, context):
     reply_keyboard = stickers_kb
-
-    update.message.reply_text(
+    res = update.message.reply_text(
         "Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?",
-        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(
+            reply_keyboard, resize_keyboard=True, one_time_keyboard=True
+        ),
     )
 
-    print(context.user_data[str(update.message.chat_id)])
+    return States.STICKERS_ANSW
 
+
+def stickers_yes(update, context):
+    update.message.reply_sticker(
+        "CAACAgIAAxkBAAPDXrleZo93jyMgBneJBJ9ejDfX9IUAAiUAA0R8oRMzVew1dDSXuhkE"
+    )
+    return States.IN_CONNECTION
+
+
+def stickers_no(update, context):
     return States.IN_CONNECTION
 
 
@@ -90,17 +102,17 @@ def current_mood(update, context):
 
     update.message.reply_text(
         "Как сейчас твое настроение?",
-        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
     )
 
-    return States.WHY_LEAVE
+    return States.FUNNY
 
 
 def why_leave(update, context):
     reply_keyboard = why_leave_kb
     update.message.reply_text(
         "Почему ты сейчас уходишь из чата?",
-        reply_keyboard=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
     )
 
     return States.IDLE
@@ -108,3 +120,24 @@ def why_leave(update, context):
 
 def error(update, context):
     update.message.reply_text("Ой, что-то пошло не так. Попробуй позже еще раз",)
+
+
+def funny(update, context):
+    reply_keyboard = funny_kb
+
+    update.message.reply_text(
+        "Что бы ты хотел?",
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True),
+    )
+
+    return States.FUNNY_ANSW
+
+
+def meme(update, context):
+    update.message.reply_photo(get_meme())
+    return States.IDLE
+
+
+def anecdot(update, context):
+    update.message.reply_text(get_anecdot())
+    return States.IDLE
