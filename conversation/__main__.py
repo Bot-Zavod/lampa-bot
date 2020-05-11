@@ -18,6 +18,12 @@ from .settings import TOKEN
 from .constants import *
 from .admin import *
 
+from os import remove, path
+fucking_path="/home/vargan/Dropbox/Programming_projects/Chatbots/lampa-bot/storage"
+if path.exists(fucking_path):
+        print("fucking_path exists")
+        remove(fucking_path)
+
 # Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -36,8 +42,7 @@ def main():
     dp = updater.dispatcher
 
     conv_handler = ConversationHandler(
-        entry_points=[CommandHandler("start", start),
-                      CommandHandler("admin", admin)],
+        entry_points=[CommandHandler("start", start)],
         states={
             States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
             States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
@@ -65,9 +70,16 @@ def main():
                 MessageHandler(Filters.regex("^Выйти$"), why_leave,),
             ],
             States.IN_CONNECTION: [chat_handler],
-
+        },
+        fallbacks=[CommandHandler("stop", done)],
+        persistent=True,
+        name="conversations",
+    )
+    admin_handler = ConversationHandler(
+        entry_points=[CommandHandler("admin", admin)],
+        states={
             States.ADMIN: [MessageHandler(Filters.regex(to_regex(admin_kb)), admin_menu)],
-            States.PUSH_WHAT: [MessageHandler(Filters.text(), push_text)],
+            States.PUSH_WHAT: [MessageHandler(Filters.text, push_text)],
             States.PUSH_SUBMIT: [MessageHandler(Filters.regex(to_regex(push_kb)), push)],
         },
         fallbacks=[CommandHandler("stop", done)],
@@ -76,6 +88,7 @@ def main():
     )
 
     dp.add_handler(conv_handler)
+    dp.add_handler(admin_handler)
 
     updater.start_polling()
 

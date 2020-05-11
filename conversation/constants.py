@@ -68,7 +68,8 @@ admin_text = {
     "not_boss": "Извини, но ты не админ(",
     "hi_boss": "Админ меню:",
     "push": "Пуш 💌",
-    "stats": "Статистика 👥", 
+    "stats": "Статистика 👥",
+    "back": "Назад",
 
     "data":"Подписки:\n3 дня: {sub_1}\nНеделя: {sub_2}\nМесяц: {sub_3}\n\nВсего диалогов: {dialogs}",
     "push_text":"Напиши сообщение для отправки",
@@ -80,7 +81,7 @@ admin_text = {
 
 admin_kb = [[admin_text["push"], admin_text["stats"]],
             [admin_text["back"]]]
-admin_kb_markup = ReplyKeyboardMarkup(admin_kb, resize_keyboard=True)
+admin_kb_markup = ReplyKeyboardMarkup(admin_kb, resize_keyboard=True, one_time_keyboard=True)
 
 
 push_kb = [[admin_text["send"], admin_text["no_send"]]]

@@ -152,41 +152,38 @@ class DBInterface:
         sql = "SELECT COUNT(*) FROM Conversations"
         try:
             self.cursor.execute(sql)
-            data = self.cursor.fetchall()[0]
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
+            data = self.cursor.fetchall()[0][0]
+        except Exception as e:
+            print(f"ERROR getConversationsCount\n{e}")
         finally:
             self.conn.commit()
-            print("FINALY")
             return data
 
     def getAllUsersID(self, table="Passes"):
         """Must return list of chat_id"""
         """U can change table to get actual from Passes and Subscribers"""
-        sql = "SELECT DISTINCT chat_id FROM (?)"
+        sql = "SELECT DISTINCT chat_id FROM Passes"
         args = [table]
         try:
-            self.cursor.execute(sql, args)
+            self.cursor.execute(sql)
             cursor = self.cursor.fetchall()
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
+        except Exception as e:
+            print(f"ERROR getAllUsersID\n{e}")
         finally:
             self.conn.commit()
-            print("FINALY")
             return list(cursor)
 
     def getCountByTerm(self, term):
         # must return INT number ( count of records )
-        sql = "SELECT COUNT(*) FROM Payments WHERE term=(?)"
-        args = [term]
+        sql = f"SELECT COUNT(*) FROM Payments WHERE term=\"{term}\""
+        # args = [term]
         try:
-            self.cursor.execute(sql, term)
-            data = self.cursor.fetchall()[0]            
-        except sqlite3.IntegrityError:
-            print("ERROR while checking the user")
+            self.cursor.execute(sql)
+            data = self.cursor.fetchall()[0][0]      
+        except Exception as e:
+            print(f"ERROR getCountByTerm\n{e}")
         finally:
             self.conn.commit()
-            print('FINALY')
             return data
 
 
