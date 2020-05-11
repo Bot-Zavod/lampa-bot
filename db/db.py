@@ -14,34 +14,34 @@ class DBInterface:
             # Payments table
             """
             CREATE TABLE IF NOT EXISTS `Payments` (
-            `payment_id` integer PRIMARY KEY,
-            `chat_id` integer,
-            `term` varchar(255),
-            `create_date` datetime
+            `payment_id` integer PRIMARY KEY NOT NULL,
+            `chat_id` integer NOT NULL,
+            `term` varchar(255) NOT NULL,
+            `create_date` datetime NOT NULL
             )
             """,
             # Subscribers table
             """
             CREATE TABLE IF NOT EXISTS `Subscribers` (
-            `chat_id` integer PRIMARY KEY,
-            `username` varchar(255),
-            `email` varchar(255),
-            `end_date` date
+            `chat_id` integer PRIMARY KEY NOT NULL,
+            `username` varchar(255) NOT NULL,
+            `email` varchar(255) NOT NULL,
+            `end_date` date NOT NULL
             )
             """,
             # Passes table
             """
             CREATE TABLE IF NOT EXISTS `Passes` (
-            `pass_id` integer PRIMARY KEY AUTOINCREMENT,
-            `chat_id` integer,
-            `create_date` date
+            `pass_id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+            `chat_id` integer NOT NULL,
+            `create_date` date NOT NULL
             )
             """,
             # Conversations table
             """
             CREATE TABLE IF NOT EXISTS `Conversations` (
-            `conv_id` integer PRIMARY KEY,
-            `create_date` date
+            `conv_id` integer PRIMARY KEY NOT NULL,
+            `create_date` date NOT NULL
             );
             """,
         ]
@@ -90,10 +90,10 @@ class DBInterface:
             self.conn.commit()
         return res
 
-    def newPass(self, pass_id, chat_id):
+    def newPass(self, chat_id):
         """create a new pass"""
-        sql = "INSERT INTO Payments VALUES (?, ?, DATE())"
-        args = [pass_id, chat_id]
+        sql = "INSERT INTO Passes (chat_id, create_date) VALUES (?, DATE())"
+        args = [chat_id]
         data = False
         try:
             self.cursor.execute(sql, args)
@@ -123,15 +123,15 @@ class DBInterface:
         )
         args = [term, chat_id]
 
-    def newPayment(self, payment_id, chat_id, term):
-        sql = "INSERT INTO Payments VALUES (?, ?, ?, datetime('now'))"
-        args = [payment_id, chat_id, term]
+    def newPayment(self, chat_id, term):
+        sql = "INSERT INTO Payments (chat_id, term, create_date)VALUES (?, ?, datetime('now'))"
+        args = [chat_id, term]
         data = False
         try:
             self.cursor.execute(sql, args)
             data = True
         except:
-            print(f"Your request newPayment {payment_id} failed")
+            print(f"Your request newPayment has failed")
         finally:
             self.conn.commit()
         return data
@@ -198,4 +198,8 @@ DB = start_database()
 
 
 if __name__ == "__main__":
-    print(DB.checkUserApply(1))
+    # print(DB.checkUserApply(1))
+    # print(DB.newPayment(12242342342,30))
+    print(DB.checkFreePass(100500),DB.checkUserApply(100500))
+    DB.newPass(100500)
+    print(DB.checkFreePass(100500),DB.checkUserApply(100500))
