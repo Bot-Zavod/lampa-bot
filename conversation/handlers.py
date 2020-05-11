@@ -1,7 +1,7 @@
 from .states import States
 from .constants import *
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
-
+from db import *
 
 def start(update, context):
     reply_keyboard = start_kb
@@ -66,7 +66,7 @@ def consent(update, context):
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
 
-    if checkFreePass():
+    if DB.checkFreePass(update.message.chat_id):
         return States.STICKERS
     else:
         return States.IN_CONNECTION

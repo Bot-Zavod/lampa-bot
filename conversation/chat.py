@@ -80,7 +80,7 @@ def done(update, context):
     update.message.reply_text(
         why_leave_text,
         reply_markup=ReplyKeyboardMarkup(
-            [list(map(str, range(1, 6)))], resize_keyboard=True
+            why_leave_kb, resize_keyboard=True
         ),
     )
     print(users, lobby)
