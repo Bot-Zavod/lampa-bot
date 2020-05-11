@@ -1,7 +1,6 @@
 import logging
-import chat
-from states import States
-from chat import *
+from .states import States
+from .chat import *
 
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
@@ -10,11 +9,13 @@ from telegram.ext import (
     MessageHandler,
     Filters,
     ConversationHandler,
+    PicklePersistence,
 )
 
-from handlers import *
-from helpers import to_regex
-from settings import *
+from .handlers import *
+from .helpers import to_regex
+from .settings import TOKEN
+from .constants import *
 
 # Enable logging
 logging.basicConfig(
@@ -28,7 +29,8 @@ def main():
 
     print("Starting")
 
-    updater = Updater(TOKEN, use_context=True)
+    pp = PicklePersistence(filename="storage")
+    updater = Updater(TOKEN, persistence=pp, use_context=True)
 
     dp = updater.dispatcher
 
@@ -50,16 +52,14 @@ def main():
             States.WHY_LEAVE: [
                 MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
             ],
-            States.IN_CONNECTION: [
-                chat_handler
-            ],
+            States.IN_CONNECTION: [chat_handler],
         },
-        fallbacks=[CommandHandler('stop', done)]
+        fallbacks=[CommandHandler("stop", done)],
+        persistent=True,
+        name="conversations",
     )
 
     dp.add_handler(conv_handler)
-
-    # dp.add_error_handler(error)
 
     updater.start_polling()
 
