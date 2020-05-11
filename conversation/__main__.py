@@ -44,13 +44,23 @@ def main():
                 MessageHandler(Filters.regex(to_regex(animal_kb)), consent,)
             ],
             States.STICKERS: [
-                MessageHandler(Filters.regex(to_regex(stickers_kb)), stickers,)
+                MessageHandler(Filters.regex(to_regex(consent_kb)), stickers,)
+            ],
+            States.STICKERS_ANSW: [
+                MessageHandler(Filters.regex("^Хочу$"), stickers_yes,),
+                MessageHandler(Filters.regex("^Не хоч$"), stickers_no,),
             ],
             States.CURRENT_MOOD: [
                 MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
             ],
             States.WHY_LEAVE: [
                 MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
+            ],
+            States.FUNNY: [MessageHandler(Filters.regex(to_regex(start_kb)), funny,)],
+            States.FUNNY_ANSW: [
+                MessageHandler(Filters.regex("^Мем$"), meme,),
+                MessageHandler(Filters.regex("^Анекдот$"), anecdot,),
+                MessageHandler(Filters.regex("^Выйти$"), why_leave,),
             ],
             States.IN_CONNECTION: [chat_handler],
         },
