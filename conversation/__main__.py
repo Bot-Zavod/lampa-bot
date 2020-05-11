@@ -54,7 +54,7 @@ def main():
                 MessageHandler(Filters.regex("^Не хочу$"), stickers_no,),
             ],
             States.WHY_LEAVE: [
-                MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
+                CommandHandler("test", why_leave)
             ],
             States.FUNNY: [MessageHandler(Filters.regex(to_regex(start_kb)), funny,)],
             States.FUNNY_ANSW: [

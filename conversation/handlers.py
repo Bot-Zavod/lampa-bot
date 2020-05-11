@@ -78,7 +78,7 @@ def consent(update, context):
 
 def stickers(update, context):
     reply_keyboard = stickers_kb
-    if False:
+    if True:
         res = update.message.reply_text(
             "Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?",
             reply_markup=ReplyKeyboardMarkup(
