@@ -175,6 +175,34 @@ class DBInterface:
             print("FINALY")
             return list(cursor)
 
+    def getCountByTerm(self, term):
+        # must return INT number ( count of records )
+        sql = "SELECT COUNT(*) FROM Payments WHERE term=(?)"
+        args = [term]
+        try:
+            self.cursor.execute(sql, term)
+            data = self.cursor.fetchall()[0]            
+        except sqlite3.IntegrityError:
+            print("ERROR while checking the user")
+        finally:
+            self.conn.commit()
+            print('FINALY')
+            return data
+
+
+    def getDates(self):
+        # Must returm list of all dates fields
+        sql = "SELECT DATE(DATE) FROM Payments;"
+        try:
+            self.cursor.execute(sql)
+            data = self.cursor.fetchall()[0]            
+        except sqlite3.IntegrityError:
+            print("ERROR while checking the user")
+        finally:
+            self.conn.commit()
+            print('FINALY')
+            return data
+
 
 # setting up the database
 def start_database():
@@ -192,8 +220,6 @@ def start_database():
     full_path = path.abspath(path.expanduser(path.expandvars(database)))
     DB = DBInterface(full_path)
     return DB
-
-
 DB = start_database()
 
 

@@ -16,6 +16,7 @@ from .handlers import *
 from .helpers import to_regex
 from .settings import TOKEN
 from .constants import *
+from .admin import *
 
 # Enable logging
 logging.basicConfig(
@@ -35,7 +36,8 @@ def main():
     dp = updater.dispatcher
 
     conv_handler = ConversationHandler(
-        entry_points=[CommandHandler("start", start)],
+        entry_points=[CommandHandler("start", start),
+                      CommandHandler("admin", admin)],
         states={
             States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
             States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
@@ -63,6 +65,10 @@ def main():
                 MessageHandler(Filters.regex("^Выйти$"), why_leave,),
             ],
             States.IN_CONNECTION: [chat_handler],
+
+            States.ADMIN: [MessageHandler(Filters.regex(to_regex(admin_kb)), admin_menu)],
+            States.PUSH_WHAT: [MessageHandler(Filters.text(), push_text)],
+            States.PUSH_SUBMIT: [MessageHandler(Filters.regex(to_regex(push_kb)), push)],
         },
         fallbacks=[CommandHandler("stop", done)],
         persistent=True,

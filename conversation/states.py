@@ -18,3 +18,7 @@ class States(Enum):
     WHY_LEAVE = 402
     FUNNY = 500
     FUNNY_ANSW = 501
+
+    ADMIN = 1488
+    PUSH_WHAT = 228
+    PUSH_SUBMIT = 229
