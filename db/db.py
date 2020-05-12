@@ -51,7 +51,7 @@ class DBInterface:
             self.conn.commit()
 
     # check iff the user has an active subscription
-    def UserIsSubscribed(self, chat_id: int) -> bool:
+    def userIsSubscribed(self, chat_id: int) -> bool:
         # compares the date today and subscribtion date
         sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) AND end_date >= DATE())"
         args = [chat_id]
@@ -127,7 +127,7 @@ class DBInterface:
         }
         sql = "INSERT OR REPLACE INTO Subscribers VALUES (?, ?, ?, "
         # check if he subscribed now
-        if self.UserIsSubscribed(chat_id):
+        if self.userIsSubscribed(chat_id):
             # if yes get the last date of his subscribtion
             date = self.getEndDateSubscribed(chat_id)
             # add new days to his last day
