@@ -3,42 +3,42 @@ from .constants import *
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Bot
 from db import *
 from memes import get_meme, get_anecdot
+from .payment import noSubscription
 
+from os import environ
 
 def start(update, context):
-    reply_keyboard = start_kb
-
+    chat_id = update.message.chat_id
     update.message.reply_text(
         (
-            "Мы рады тебе.)\n\
-            пройди lampa-тест, чтобы мы могли почувствовать твой current mood\
-            (настроение и состояние)"
+            "Мы рады тебе.)\nпройди lampa-тест, чтобы мы могли почувствовать твой current mood(настроение и состояние)"
         ),
-        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(keyboard=start_kb, resize_keyboard=True),
     )
-    context.user_data[str(update.message.chat_id)] = []
-    if True:  # is_admin():
+    context.user_data[str(chat_id)] = []
+
+    # check if user honorable enough or paid to use the bot
+    if str(update.message.chat.username) in environ["ADMIN"]:
         return States.FRUIT
+    # elif DB.userIsSubscribed(chat_id) or DB.haveFreePass(chat_id):
+    #     return States.FRUIT
     else:
-        return States.IN_PAYMENT
+        return noSubscription(update, context)
 
 
 def fruit(update, context):
-    reply_keyboard = fruit_kb
     update.message.reply_text(
         "Какой ты сейчас фрукт?",
-        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(keyboard = fruit_kb, resize_keyboard=True),
     )
 
     return States.SOUND
 
 
 def sound(update, context):
-    reply_keyboard = sound_kb
-
     update.message.reply_text(
         "Какой ты сейчас звук?",
-        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(keyboard = sound_kb, resize_keyboard=True),
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
 
@@ -46,11 +46,9 @@ def sound(update, context):
 
 
 def animal(update, context):
-    reply_keyboard = animal_kb
-
     update.message.reply_text(
         "Какое ты сейчас животное?",
-        reply_markup=ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True),
+        reply_markup=ReplyKeyboardMarkup(keyboard = animal_kb, resize_keyboard=True),
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
 
@@ -63,12 +61,10 @@ def animal(update, context):
 
 
 def consent(update, context):
-    reply_keyboard = consent_kb
-
     update.message.reply_text(
         "Я буду внимательно, этично и тепло относиться к человеку на том конце чата.",
         reply_markup=ReplyKeyboardMarkup(
-            reply_keyboard, resize_keyboard=True, one_time_keyboard=True
+            keyboard = consent_kb, resize_keyboard=True, one_time_keyboard=True
         ),
     )
     context.user_data[str(update.message.chat_id)].append(update.message.text)
@@ -77,12 +73,11 @@ def consent(update, context):
 
 
 def stickers(update, context):
-    reply_keyboard = stickers_kb
     if False:
         res = update.message.reply_text(
             "Пока я соединяю тебя с собеседником, хочешь самые милые на свете стикеры?",
             reply_markup=ReplyKeyboardMarkup(
-                reply_keyboard, resize_keyboard=True, one_time_keyboard=True
+                reply_keyboard = stickers_kb, resize_keyboard=True, one_time_keyboard=True
             ),
         )
         return States.STICKERS_ANSW

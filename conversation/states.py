@@ -2,6 +2,10 @@ from enum import Enum
 
 
 class States(Enum):
+    SUB = "Pisos"
+    SUB_REFUSAL = "dickhead"
+    SUB_REFUSAL_EXPLAINED = "fuck"
+
     NONE = 000
     IDLE = 1
     IN_PAYMENT = 2

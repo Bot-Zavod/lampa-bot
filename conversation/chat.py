@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 from .twoWayDict import TwoWayDict
+
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
     Updater,
     CommandHandler,
@@ -11,7 +13,8 @@ from telegram.ext import (
 from .helpers import to_regex
 from .constants import *
 from .states import States
-from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
+from db import *
+
 
 users = TwoWayDict()
 lobby = []
@@ -20,6 +23,7 @@ CONVERSATION = range(1)
 
 
 def start(update, context):
+    DB.insertNewPass(update.message.chat_id)
     update.message.reply_text(connection_text, reply_markup=ReplyKeyboardRemove())
     if not update.message.chat_id in lobby:
         lobby.append(update.message.chat_id)
