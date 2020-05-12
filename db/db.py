@@ -41,9 +41,9 @@ class DBInterface:
             """
             CREATE TABLE IF NOT EXISTS `Conversations` (
             "conv_id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	        "create_date"	date NOT NULL
-            );
-            """,
+	    "create_date" date NOT NULL
+            )
+            """
         ]
 
         for sql in sql_tables:
