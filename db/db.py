@@ -50,7 +50,7 @@ class DBInterface:
             self.cursor.execute(sql)
             self.conn.commit()
 
-    # check iff the user has an active subscription
+    # check if the user has an active subscription
     def userIsSubscribed(self, chat_id: int) -> bool:
         # compares the date today and subscribtion date
         sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) AND end_date >= DATE())"
@@ -62,7 +62,7 @@ class DBInterface:
             # turn answer into boolean
             res = bool(cursor)
         except Exception as e:
-            print(f"[ERROR] checkUserSubscribed\n{e}")
+            print(f"[ERROR] userIsSubscribed\n{e}\n")
         finally:
             self.conn.commit()
             return res
@@ -88,19 +88,19 @@ class DBInterface:
                 data = self.cursor.fetchall()[0][0]
                 res = not bool(data)
         except Exception as e:
-            print(f"[ERROR] checkFreePass\n{e}\n")
+            print(f"[ERROR] haveFreePass\n{e}\n")
         finally:
             self.conn.commit()
             return res
 
     # create a new pass with user chat_id
-    def InsertNewPass(self, chat_id: int) -> None:
+    def insertNewPass(self, chat_id: int) -> None:
         sql = "INSERT INTO Passes (chat_id, create_date) VALUES (?, DATE())"
         args = [chat_id]
         try:
             self.cursor.execute(sql, args)
         except Exception as e:
-            print(f"[ERROR] newPass\n{e}\n")
+            print(f"[ERROR] insertNewPass\n{e}\n")
         finally:
             self.conn.commit()
 
@@ -113,7 +113,7 @@ class DBInterface:
             self.cursor.execute(sql, args)
             date = self.cursor.fetchall()[0][0]
         except Exception as e:
-            print(f"[ERROR] getEndDateSubscribed\n{e}")
+            print(f"[ERROR] getEndDateSubscribed\n{e}\n")
         finally:
             self.conn.commit()
             return date
@@ -151,7 +151,7 @@ class DBInterface:
         try:
             self.cursor.execute(sql, args)
         except Exception as e:
-            print(f"[ERROR] newPayment\n{e}\n")
+            print(f"[ERROR] createNewPayment\n{e}\n")
         finally:
             self.conn.commit()
 
@@ -241,4 +241,4 @@ if __name__ == "__main__":
     # for i in range(2,5):
     #     print(DB.checkUserSubscribed(i))
 
-    print(DB.getCountByTerm("3days"))
+    # print(DB.getCountByTerm("3days"))
