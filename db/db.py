@@ -51,7 +51,7 @@ class DBInterface:
             self.conn.commit()
 
     # check iff the user has an active subscription
-    def checkUserSubscribed(self, chat_id: int) -> bool:
+    def UserIsSubscribed(self, chat_id: int) -> bool:
         # compares the date today and subscribtion date
         sql = "SELECT EXISTS(SELECT * FROM Subscribers WHERE chat_id = (?) AND end_date >= DATE())"
         args = [chat_id]
@@ -68,7 +68,7 @@ class DBInterface:
             return res
 
     # Checks whether the user can make a free conversation
-    def checkFreePass(self, chat_id: int) -> bool:
+    def haveFreePass(self, chat_id: int) -> bool:
         res = True
         try:
             # checks if he had already used bot 3 times
@@ -94,7 +94,7 @@ class DBInterface:
             return res
 
     # create a new pass with user chat_id
-    def newPass(self, chat_id: int) -> None:
+    def InsertNewPass(self, chat_id: int) -> None:
         sql = "INSERT INTO Passes (chat_id, create_date) VALUES (?, DATE())"
         args = [chat_id]
         try:
@@ -104,7 +104,6 @@ class DBInterface:
         finally:
             self.conn.commit()
 
-        # create a new pass with user chat_id
 
     # get end date of user subscribtion
     def getEndDateSubscribed(self, chat_id: int) -> str:
@@ -128,7 +127,7 @@ class DBInterface:
         }
         sql = "INSERT OR REPLACE INTO Subscribers VALUES (?, ?, ?, "
         # check if he subscribed now
-        if self.checkUserSubscribed(chat_id):
+        if self.UserIsSubscribed(chat_id):
             # if yes get the last date of his subscribtion
             date = self.getEndDateSubscribed(chat_id)
             # add new days to his last day
@@ -145,7 +144,7 @@ class DBInterface:
             self.conn.commit()
 
     # create new payment data row
-    def newPayment(self, payment_id: int, chat_id: int, term: str) -> None:
+    def createNewPayment(self, payment_id: int, chat_id: int, term: str) -> None:
         sql = "INSERT INTO Payments (payment_id, chat_id, term, create_date)\
              VALUES (?, ?, ?, datetime('now'))"
         args = [payment_id, chat_id, term]
