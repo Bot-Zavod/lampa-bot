@@ -61,7 +61,7 @@ def admin_menu(update, context):
 # show up basic admin menu
 def admin(update, context):
     # checks if you are a true admin
-    if update.message.chat.username == "V_vargan":#in environ["ADMIN"]:
+    if str(update.message.chat.username) in environ["ADMIN"]:
         update.message.reply_text(admin_text["hi_boss"], reply_markup=admin_kb_markup)
         return States.ADMIN
     else:
