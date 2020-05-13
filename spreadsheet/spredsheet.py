@@ -28,11 +28,11 @@ def spreadsheet(worksheet: int) -> object:
 
 
 # update after_chat feedback
-def after_chat(mood: str, reason: str) -> None:
+def after_chat(reason: str, mood: str,) -> None:
     sheet = spreadsheet(0)
     feedback = sheet.get_all_values()
     feedback_len = len(feedback)+1
-    new_feedback = [[mood, reason]]
+    new_feedback = [[reason, mood]]
     sheet.update(f"A{feedback_len}", new_feedback)
 
 # update payment_refused feedback

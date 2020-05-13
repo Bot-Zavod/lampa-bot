@@ -25,10 +25,8 @@ def terms(update, context):
 def noSubscription(update, context):
 	chat_id = update.message.chat.id
 
-	text = "Кажется.. Сегодня все lampa-тесты уже пройдены 😞"
-	context.bot.send_message(chat_id=chat_id, text=text, reply_markup=ReplyKeyboardRemove())
-
-	text = "Ты можешь поболтать с кем-то еще, купив lampa-подписку"
+	text = "Кажется.. Сегодня все lampa-тесты уже пройдены 😞\n"+\
+		   "Ты можешь поболтать с кем-то еще, купив lampa-подписку"
 	day = InlineKeyboardButton(text="3 дня", callback_data="3days")
 	week = InlineKeyboardButton(text="Неделя", callback_data="week")
 	month = InlineKeyboardButton(text="Месяц", callback_data="month")
@@ -38,7 +36,7 @@ def noSubscription(update, context):
 	context.bot.send_message(chat_id=chat_id, text=text, reply_markup=reply_markup)
 
 	logger.info("User %s: try to subscribe;", chat_id)
-	return States.SUB
+	return States.IN_PAYMENT
 
 
 def no_sps(update, context):
@@ -64,32 +62,39 @@ def other(update, context):
 
 	# Что нажал пользователь в no_sps
 	data = update.callback_query.data
-	
+	reason_text = {'reason1':"Сервис мне не интересен",'reason2':"Меня не устраивает цена подписки"}
 	# Просим пояснить за базар
 	if data == 'other':
 		text = 'Расскажите пожалуйста почему?'
 		context.bot.send_message(chat_id=chat_id, text=text)
 		logger.info("User %s: take other;", chat_id)
+		
 		return States.SUB_REFUSAL_EXPLAINED
 
 	# Понятная причина reason1 or reason2
 	else:
 		logger.info("User %s: take 1-2 reason;", chat_id)
-		payment_refused(data)
+		# for goole
 
-		# Тут надо так, ибо update спецефический
-		return sps_buy(update.callback_query, context)
+		reply_markup=ReplyKeyboardMarkup(keyboard=start_kb, resize_keyboard=True)
+		text = 'Спасибо, друг!) Я всегда тебе рад, если вдруг будет грустно и захочется с кем-то поговорить 🙂'
+		context.bot.send_message(chat_id=chat_id, text=text, reply_markup=reply_markup)
+		logger.info("User %s: sps_buy;", chat_id)
+
+		payment_refused(reason_text[data])
+		return States.FRUIT
 
 # Конец опросника "Пояснение за базар!)"
 def sps_buy(update, context):
-	reason = update.message.text
-	payment_refused(reason)
-	
 	reply_markup=ReplyKeyboardMarkup(keyboard=start_kb, resize_keyboard=True)
 	text = 'Спасибо, друг!) Я всегда тебе рад, если вдруг будет грустно и захочется с кем-то поговорить 🙂'
 	update.message.reply_text(text=text, reply_markup=reply_markup)
-	logger.info("User %s: subscribed;", update.message.chat.id)
-	return ConversationHandler.END
+	chat_id = update.message.chat.id
+	logger.info("User %s: sps_buy;", chat_id)
+
+	reason = update.message.text
+	payment_refused(reason)
+	return States.FRUIT
 
 # sendInvoice
 def pay(update, context):
@@ -115,6 +120,7 @@ def pay(update, context):
 def precheckout_callback(update, context):
     query = update.pre_checkout_query
     chat_id = update.effective_user.id
+    username = update.effective_user.username
     payment_id = query.id
     email =  query.order_info.email
     term = query.invoice_payload
@@ -122,8 +128,8 @@ def precheckout_callback(update, context):
     if query.invoice_payload not in ['3days','week','month']:
         query.answer(ok=False, error_message="Smthn went wrong ...")
     else:    	
-    	DB.newSubscriber(chat_id, term)
-    	DB.createNewPayment(payment_id, chat_id, email, term)
+    	DB.newSubscriber(chat_id, username, email, term)
+    	DB.createNewPayment(payment_id, chat_id, term)
     	query.answer(ok=True)
 
 # Это обработчик платежки
@@ -131,6 +137,7 @@ def successful_payment_callback(update, context):
 	reply_markup=ReplyKeyboardMarkup(keyboard=start_kb, resize_keyboard=True)
 	update.message.reply_text("Как хорошо, что ты здесь!) Узнаем твоё настроение?🦄", reply_markup=reply_markup)
 	logger.info("User %s: subscribed", update.message.chat.id)
+	return States.FRUIT
 
 # Остановка хэндлера, аля отмены
 def cancel(update, context):

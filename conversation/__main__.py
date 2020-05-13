@@ -66,28 +66,13 @@ def main():
     dp.add_handler(PreCheckoutQueryHandler(precheckout_callback))
     dp.add_handler(MessageHandler(Filters.successful_payment, successful_payment_callback))
 
-    payment_handler = ConversationHandler(
-        # per_message=True,
-        entry_points=[CallbackQueryHandler(no_sps, pattern='^(no_sps)$'),
-                      CallbackQueryHandler(pay, pattern='^(3days|week|month)$')],
-        states={
-            States.SUB_REFUSAL: [CallbackQueryHandler(other, pattern='^(other|reason1|reason2)$')],
-            States.SUB_REFUSAL_EXPLAINED: [MessageHandler(Filters.text, sps_buy)],
-        },
-        fallbacks=[CommandHandler('cancel', cancel)],
-        map_to_parent={ConversationHandler.END: States.FRUIT,},
-    )
-
     conv_handler = ConversationHandler(
+        allow_reentry=True,
         entry_points=[CommandHandler("start", start)],
         states={
-            States.IN_PAYMENT: [payment_handler],
             States.FRUIT: [MessageHandler(Filters.regex(to_regex(start_kb)), fruit,)],
             States.SOUND: [MessageHandler(Filters.regex(to_regex(fruit_kb)), sound,)],
             States.ANIMAL: [MessageHandler(Filters.regex(to_regex(sound_kb)), animal,)],
-            States.CURRENT_MOOD: [
-                MessageHandler(Filters.regex(to_regex(current_mood_kb)), current_mood,)
-            ],
             States.CONSENT: [
                 MessageHandler(Filters.regex(to_regex(animal_kb)), consent,)
             ],
@@ -98,16 +83,29 @@ def main():
                 MessageHandler(Filters.regex("^Хочу$"), stickers_yes,),
                 MessageHandler(Filters.regex("^Не хочу$"), stickers_no,),
             ],
+
+
             States.WHY_LEAVE: [
-                MessageHandler(Filters.regex(to_regex(start_kb)), why_leave,)
+                MessageHandler(Filters.regex(to_regex(why_leave_kb)), current_mood,)
             ],
-            States.FUNNY: [MessageHandler(Filters.regex(to_regex(start_kb)), funny,)],
+            States.CURRENT_MOOD: [
+                MessageHandler(Filters.regex(to_regex(current_mood_kb)), to_google_sheet,)
+            ],
+
+
+            # States.FUNNY: [MessageHandler(Filters.regex(to_regex(current_mood_kb)), funny)],
             States.FUNNY_ANSW: [
                 MessageHandler(Filters.regex("^Мем$"), meme,),
                 MessageHandler(Filters.regex("^Анекдот$"), anecdot,),
-                MessageHandler(Filters.regex("^Выйти$"), why_leave,),
+                MessageHandler(Filters.regex("^Выйти$"), start),
             ],
+
+
             States.IN_CONNECTION: [chat_handler],
+            States.IN_PAYMENT: [CallbackQueryHandler(no_sps, pattern='^(no_sps)$'),
+                                CallbackQueryHandler(pay, pattern='^(3days|week|month)$')],
+            States.SUB_REFUSAL: [CallbackQueryHandler(other, pattern='^(other|reason1|reason2)$')],
+            States.SUB_REFUSAL_EXPLAINED: [MessageHandler(Filters.text, sps_buy)],
         },
         fallbacks=[CommandHandler("stop", done)],
         persistent=True,
@@ -124,7 +122,7 @@ def main():
         fallbacks=[CommandHandler("stop", done)],
     )
 
-    dp.add_handler(payment_handler)
+
     dp.add_handler(conv_handler)
     dp.add_handler(admin_handler)
 

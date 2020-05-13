@@ -44,10 +44,10 @@ class DBInterface:
 
     # safely executes sql request
     def execute_sql(self, sql_and_args: list) -> None:
-        function_name = currentframe().f_back.f_code.co_name
         try:
             self.cursor.execute(*sql_and_args)
         except Exception as e:
+            function_name = currentframe().f_back.f_code.co_name
             print(f"[ERROR] {function_name}\n{e}\n")
         finally:
             self.conn.commit()
@@ -96,6 +96,13 @@ class DBInterface:
             data = self.cursor.fetchall()[0][0]
             res = not bool(data)
         return res
+
+    # if it the first user time
+    def firstTimeEntry(self, chat_id: int) -> bool:
+        sql = "SELECT COUNT(*) FROM Passes WHERE chat_id = (?)"
+        self.execute_sql([sql,[chat_id]])
+        data = self.cursor.fetchall()[0][0]
+        return not bool(data)
 
 
 
@@ -146,7 +153,7 @@ class DBInterface:
 
     # return number of conversations
     def getConversationsCount(self) -> int:
-        sql = "SELECT COUNT(*) FROM Passes"
+        sql = "SELECT COUNT(*) FROM Conversations"
         self.execute_sql([sql])
         data = self.cursor.fetchall()[0][0]
         return data
@@ -189,6 +196,5 @@ DB = start_database()
 
 
 if __name__ == "__main__":
-    # for i in range(2,5):
-    #     print(DB.checkUserSubscribed(i))
+    # print(DB.firstTimeEntry(2))
     pass

@@ -81,12 +81,9 @@ def done(update, context):
         del users[chat_id]
     else:
         update.message.reply_text(chat_finished_text)
-    update.message.reply_text(
-        why_leave_text,
-        reply_markup=ReplyKeyboardMarkup(
-            why_leave_kb, resize_keyboard=True
-        ),
-    )
+    
+    reply_markup=ReplyKeyboardMarkup(keyboard = why_leave_kb, resize_keyboard=True)
+    update.message.reply_text(text = why_leave_text, reply_markup=reply_markup)
     print(users, lobby)
     return ConversationHandler.END
 
