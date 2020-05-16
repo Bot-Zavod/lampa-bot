@@ -30,7 +30,7 @@ def fruit(update, context):
     # check if user honorable enough or paid to use the bot
     admin = str(update.message.chat.username) in environ["ADMIN"]
     if not admin:
-        if not not (DB.userIsSubscribed(chat_id) or DB.haveFreePass(chat_id)):
+        if not (DB.userIsSubscribed(chat_id) or DB.haveFreePass(chat_id)):
             return noSubscription(update, context)
     context.user_data[str(chat_id)] = []
 

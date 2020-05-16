@@ -44,6 +44,8 @@ def connect():
 
 
 def answer(update, context):
+    #this shit fix problem with NONEchat_id shit
+    update = update.callback_query if update.callback_query else update
     if update.message.chat_id in users:
         context.bot.send_message(
             chat_id=users[update.message.chat_id], text=update.message.text

@@ -1,0 +1,1744 @@
+/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py:220: UserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message.
+  warnings.warn("If 'per_message=False', 'CallbackQueryHandler' will not be "
+2020-05-13 21:44:23,305 - conversation.handlers - INFO - User 207534011: press /start;
+2020-05-13 21:44:26,139 - conversation.handlers - INFO - User 207534011: fruit func;
+2020-05-13 21:44:28,159 - conversation.handlers - INFO - User 207534011: sound func;
+2020-05-13 21:44:30,294 - conversation.handlers - INFO - User 207534011: animal func;
+2020-05-13 21:44:31,562 - conversation.handlers - INFO - User 207534011: stickers func;
+2020-05-13 21:44:31,688 - conversation.handlers - INFO - User 207534011: consent func;
+2020-05-13 21:44:45,983 - conversation.handlers - INFO - User 207534011: current_mood func;
+2020-05-13 21:44:53,883 - conversation.handlers - INFO - User 207534011: press /start;
+2020-05-13 21:44:58,984 - conversation.handlers - INFO - User 207534011: fruit func;
+2020-05-13 21:45:00,272 - conversation.handlers - INFO - User 207534011: sound func;
+2020-05-13 21:45:01,426 - conversation.handlers - INFO - User 207534011: animal func;
+2020-05-13 21:45:02,422 - conversation.handlers - INFO - User 207534011: stickers func;
+2020-05-13 21:45:02,536 - conversation.handlers - INFO - User 207534011: consent func;
+2020-05-13 21:45:08,135 - conversation.handlers - INFO - User 207534011: press /start;
+2020-05-13 21:45:09,760 - conversation.payment - INFO - User 207534011: try to subscribe;
+2020-05-13 21:45:34,821 - conversation.handlers - INFO - User 162420086: press /start;
+2020-05-13 21:45:37,447 - conversation.handlers - INFO - User 162420086: fruit func;
+2020-05-13 21:45:46,093 - conversation.handlers - INFO - User 162420086: sound func;
+2020-05-13 21:45:50,725 - conversation.handlers - INFO - User 162420086: animal func;
+2020-05-13 21:45:54,067 - conversation.handlers - INFO - User 162420086: stickers func;
+2020-05-13 21:45:57,552 - conversation.handlers - INFO - User 162420086: stickers_yes func;
+2020-05-13 21:45:57,672 - conversation.handlers - INFO - User 162420086: consent func;
+2020-05-13 21:46:09,246 - conversation.payment - INFO - User 207534011: get Invoice on 3days;
+2020-05-13 21:50:51,356 - conversation.handlers - INFO - User 31995053: press /start;
+2020-05-13 21:50:53,321 - conversation.handlers - INFO - User 31995053: fruit func;
+2020-05-13 21:51:01,757 - conversation.handlers - INFO - User 31995053: sound func;
+2020-05-13 21:51:06,911 - conversation.handlers - INFO - User 31995053: animal func;
+2020-05-13 21:51:25,812 - conversation.handlers - INFO - User 31995053: stickers func;
+2020-05-13 21:51:29,368 - conversation.handlers - INFO - User 31995053: stickers_no func;
+2020-05-13 21:51:29,492 - conversation.handlers - INFO - User 31995053: consent func;
+2020-05-13 21:53:03,801 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-13 21:53:04,809 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-13 21:53:05,792 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-13 21:53:06,666 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-13 21:53:06,786 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-13 22:01:53,383 - conversation.handlers - INFO - User 5260328: press /start;
+2020-05-13 22:02:00,178 - conversation.handlers - INFO - User 5260328: fruit func;
+2020-05-13 22:02:02,184 - conversation.handlers - INFO - User 5260328: sound func;
+2020-05-13 22:02:08,427 - conversation.handlers - INFO - User 5260328: animal func;
+2020-05-13 22:02:16,743 - conversation.handlers - INFO - User 5260328: stickers func;
+2020-05-13 22:02:20,463 - conversation.handlers - INFO - User 5260328: stickers_yes func;
+2020-05-13 22:02:20,583 - conversation.handlers - INFO - User 5260328: consent func;
+2020-05-13 22:03:24,677 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-13 22:03:27,262 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-13 22:03:28,947 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-13 22:03:30,077 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-13 22:03:31,259 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-13 22:03:31,858 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-13 22:03:32,025 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-13 22:04:13,960 - conversation.handlers - INFO - User 31995053: current_mood func;
+2020-05-13 22:04:21,368 - conversation.handlers - INFO - User 31995053: press /start;
+2020-05-13 22:10:16,904 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-13 22:10:21,677 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-13 22:16:54,229 - conversation.handlers - INFO - User 31995053: fruit func;
+2020-05-13 23:09:00,653 - conversation.handlers - INFO - User 536300910: fruit func;
+2020-05-13 23:09:06,013 - conversation.handlers - INFO - User 536300910: sound func;
+2020-05-13 23:09:11,417 - conversation.handlers - INFO - User 536300910: animal func;
+2020-05-13 23:09:13,597 - conversation.handlers - INFO - User 536300910: stickers func;
+2020-05-13 23:09:13,736 - conversation.handlers - INFO - User 536300910: consent func;
+2020-05-13 23:09:27,395 - conversation.handlers - INFO - User 536300910: press /start;
+2020-05-13 23:09:29,151 - conversation.handlers - INFO - User 536300910: fruit func;
+2020-05-13 23:09:34,763 - conversation.handlers - INFO - User 536300910: sound func;
+2020-05-13 23:09:36,110 - conversation.handlers - INFO - User 536300910: animal func;
+2020-05-13 23:09:38,688 - conversation.handlers - INFO - User 536300910: stickers func;
+2020-05-13 23:09:38,813 - conversation.handlers - INFO - User 536300910: consent func;
+2020-05-13 23:09:57,638 - conversation.handlers - INFO - User 536300910: press /start;
+2020-05-13 23:09:59,507 - conversation.payment - INFO - User 536300910: try to subscribe;
+2020-05-13 23:21:54,853 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-13 23:21:58,085 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-13 23:21:59,114 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-13 23:21:59,915 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-13 23:22:00,883 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-13 23:22:01,061 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-13 23:23:37,580 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-13 23:24:08,093 - conversation.payment - INFO - User 536300910: get Invoice on 3days;
+2020-05-13 23:29:58,141 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 01:42:01,036 - conversation.handlers - INFO - User 230239530: press /start;
+2020-05-14 01:42:04,030 - conversation.handlers - INFO - User 230239530: fruit func;
+2020-05-14 01:42:09,933 - conversation.handlers - INFO - User 230239530: sound func;
+2020-05-14 01:42:14,607 - conversation.handlers - INFO - User 230239530: animal func;
+2020-05-14 01:42:17,896 - conversation.handlers - INFO - User 230239530: stickers func;
+2020-05-14 01:42:51,204 - conversation.handlers - INFO - User 230239530: stickers_yes func;
+2020-05-14 01:42:51,322 - conversation.handlers - INFO - User 230239530: consent func;
+2020-05-14 01:43:35,796 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-14 01:43:37,047 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-14 01:43:38,043 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-14 01:43:39,062 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-14 01:43:39,865 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-14 01:43:39,988 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-14 01:47:26,851 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-14 01:47:30,929 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-14 01:50:01,196 - conversation.handlers - INFO - User 230239530: current_mood func;
+2020-05-14 01:50:12,466 - conversation.handlers - INFO - User 230239530: press /start;
+2020-05-14 02:33:52,257 - conversation.handlers - INFO - User 181927642: press /start;
+2020-05-14 02:33:57,086 - conversation.handlers - INFO - User 181927642: fruit func;
+2020-05-14 02:34:02,002 - conversation.handlers - INFO - User 181927642: sound func;
+2020-05-14 02:34:04,661 - conversation.handlers - INFO - User 181927642: animal func;
+2020-05-14 02:34:06,276 - conversation.handlers - INFO - User 181927642: stickers func;
+2020-05-14 02:34:10,214 - conversation.handlers - INFO - User 181927642: stickers_no func;
+2020-05-14 02:34:10,330 - conversation.handlers - INFO - User 181927642: consent func;
+2020-05-14 03:04:03,821 - conversation.handlers - INFO - User 690590073: press /start;
+2020-05-14 03:04:08,024 - conversation.handlers - INFO - User 690590073: fruit func;
+2020-05-14 03:04:20,517 - conversation.handlers - INFO - User 690590073: sound func;
+2020-05-14 03:04:34,687 - conversation.handlers - INFO - User 690590073: animal func;
+2020-05-14 03:04:38,648 - conversation.handlers - INFO - User 690590073: stickers func;
+2020-05-14 03:04:42,702 - conversation.handlers - INFO - User 690590073: stickers_yes func;
+2020-05-14 03:04:42,820 - conversation.handlers - INFO - User 690590073: consent func;
+2020-05-14 04:18:05,407 - conversation.handlers - INFO - User 217814660: press /start;
+2020-05-14 04:18:15,022 - conversation.handlers - INFO - User 217814660: fruit func;
+2020-05-14 04:18:27,435 - conversation.handlers - INFO - User 217814660: sound func;
+2020-05-14 04:18:35,954 - conversation.handlers - INFO - User 217814660: animal func;
+2020-05-14 04:18:40,873 - conversation.handlers - INFO - User 217814660: stickers func;
+2020-05-14 04:18:45,971 - conversation.handlers - INFO - User 217814660: stickers_yes func;
+2020-05-14 04:18:46,093 - conversation.handlers - INFO - User 217814660: consent func;
+2020-05-14 05:49:47,505 - conversation.handlers - INFO - User 274516177: press /start;
+2020-05-14 05:49:51,013 - conversation.handlers - INFO - User 274516177: fruit func;
+2020-05-14 05:49:56,898 - conversation.handlers - INFO - User 274516177: sound func;
+2020-05-14 05:50:01,055 - conversation.handlers - INFO - User 274516177: animal func;
+2020-05-14 05:50:04,247 - conversation.handlers - INFO - User 274516177: stickers func;
+2020-05-14 05:50:08,081 - conversation.handlers - INFO - User 274516177: stickers_yes func;
+2020-05-14 05:50:08,200 - conversation.handlers - INFO - User 274516177: consent func;
+2020-05-14 06:45:01,915 - conversation.handlers - INFO - User 384341805: fruit func;
+2020-05-14 06:45:03,429 - conversation.handlers - INFO - User 384341805: sound func;
+2020-05-14 06:45:04,258 - conversation.handlers - INFO - User 384341805: animal func;
+2020-05-14 06:45:04,945 - conversation.handlers - INFO - User 384341805: stickers func;
+2020-05-14 06:45:05,139 - conversation.handlers - INFO - User 384341805: consent func;
+2020-05-14 06:45:23,804 - conversation.handlers - INFO - User 384341805: current_mood func;
+2020-05-14 06:45:27,096 - conversation.handlers - INFO - User 384341805: press /start;
+2020-05-14 07:01:37,038 - conversation.handlers - INFO - User 228530031: press /start;
+2020-05-14 07:01:58,446 - conversation.handlers - INFO - User 228530031: press /start;
+2020-05-14 07:02:10,361 - conversation.handlers - INFO - User 228530031: fruit func;
+2020-05-14 07:02:12,341 - conversation.handlers - INFO - User 228530031: sound func;
+2020-05-14 07:02:13,567 - conversation.handlers - INFO - User 228530031: animal func;
+2020-05-14 07:02:14,265 - conversation.handlers - INFO - User 228530031: stickers func;
+2020-05-14 07:02:14,410 - conversation.handlers - INFO - User 228530031: consent func;
+2020-05-14 07:08:49,288 - conversation.handlers - INFO - User 228530031: current_mood func;
+2020-05-14 07:08:58,977 - conversation.handlers - INFO - User 228530031: press /start;
+2020-05-14 07:09:14,999 - conversation.handlers - INFO - User 228530031: fruit func;
+2020-05-14 07:09:17,669 - conversation.handlers - INFO - User 228530031: sound func;
+2020-05-14 07:09:18,461 - conversation.handlers - INFO - User 228530031: animal func;
+2020-05-14 07:09:19,264 - conversation.handlers - INFO - User 228530031: stickers func;
+2020-05-14 07:09:19,432 - conversation.handlers - INFO - User 228530031: consent func;
+2020-05-14 07:23:44,555 - conversation.handlers - INFO - User 690590073: press /start;
+2020-05-14 07:23:47,048 - conversation.handlers - INFO - User 690590073: fruit func;
+2020-05-14 08:17:10,316 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-14 08:17:11,440 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-14 08:17:12,457 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-14 08:17:13,247 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-14 08:17:13,410 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-14 08:17:18,846 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-14 08:17:19,549 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 135, in to_google_sheet
+    google_answers['current_mood'][answers[-1]]]
+KeyError: 'Другое'
+2020-05-14 08:22:19,193 - conversation.handlers - INFO - User 274516177: current_mood func;
+2020-05-14 08:22:26,663 - conversation.handlers - INFO - User 274516177: press /start;
+2020-05-14 08:30:45,105 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-14 09:27:51,044 - conversation.handlers - INFO - User 64748407: press /start;
+2020-05-14 09:27:54,068 - conversation.handlers - INFO - User 64748407: fruit func;
+2020-05-14 09:27:56,406 - conversation.handlers - INFO - User 64748407: sound func;
+2020-05-14 09:27:59,761 - conversation.handlers - INFO - User 64748407: animal func;
+2020-05-14 09:28:01,208 - conversation.handlers - INFO - User 64748407: stickers func;
+2020-05-14 09:28:04,642 - conversation.handlers - INFO - User 64748407: stickers_yes func;
+2020-05-14 09:28:04,768 - conversation.handlers - INFO - User 64748407: consent func;
+2020-05-14 10:43:00,622 - conversation.handlers - INFO - User 415251866: press /start;
+2020-05-14 10:43:03,237 - conversation.handlers - INFO - User 415251866: fruit func;
+2020-05-14 10:43:07,608 - conversation.handlers - INFO - User 415251866: sound func;
+2020-05-14 10:43:13,631 - conversation.handlers - INFO - User 415251866: animal func;
+2020-05-14 10:43:19,173 - conversation.handlers - INFO - User 415251866: stickers func;
+2020-05-14 10:43:24,937 - conversation.handlers - INFO - User 415251866: stickers_yes func;
+2020-05-14 10:43:25,078 - conversation.handlers - INFO - User 415251866: consent func;
+2020-05-14 12:50:12,197 - conversation.handlers - INFO - User 217814660: current_mood func;
+2020-05-14 12:50:24,375 - conversation.handlers - INFO - User 217814660: press /start;
+2020-05-14 12:56:57,582 - conversation.handlers - INFO - User 181927642: current_mood func;
+2020-05-14 12:57:00,361 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 15:01:58,150 - conversation.handlers - INFO - User 292584438: press /start;
+2020-05-14 15:01:59,938 - conversation.handlers - INFO - User 292584438: fruit func;
+2020-05-14 15:02:03,857 - conversation.handlers - INFO - User 292584438: sound func;
+2020-05-14 15:02:07,835 - conversation.handlers - INFO - User 292584438: animal func;
+2020-05-14 15:02:12,812 - conversation.handlers - INFO - User 292584438: stickers func;
+2020-05-14 15:02:12,937 - conversation.handlers - INFO - User 292584438: consent func;
+2020-05-14 15:04:50,463 - conversation.handlers - INFO - User 292584438: current_mood func;
+2020-05-14 15:04:55,321 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 15:05:00,558 - conversation.handlers - INFO - User 292584438: press /start;
+2020-05-14 15:05:04,362 - conversation.handlers - INFO - User 292584438: fruit func;
+2020-05-14 15:05:10,282 - conversation.handlers - INFO - User 292584438: sound func;
+2020-05-14 15:05:15,735 - conversation.handlers - INFO - User 292584438: animal func;
+2020-05-14 15:05:19,100 - conversation.handlers - INFO - User 292584438: stickers func;
+2020-05-14 15:05:19,270 - conversation.handlers - INFO - User 292584438: consent func;
+2020-05-14 17:23:58,536 - conversation.handlers - INFO - User 274516177: fruit func;
+2020-05-14 17:24:17,844 - conversation.handlers - INFO - User 274516177: sound func;
+2020-05-14 17:24:40,811 - conversation.handlers - INFO - User 274516177: animal func;
+2020-05-14 17:24:52,055 - conversation.handlers - INFO - User 274516177: stickers func;
+2020-05-14 17:24:52,177 - conversation.handlers - INFO - User 274516177: consent func;
+2020-05-14 17:46:09,624 - conversation.handlers - INFO - User 146512807: press /start;
+2020-05-14 17:54:39,506 - conversation.handlers - INFO - User 146512807: fruit func;
+2020-05-14 17:54:49,607 - conversation.handlers - INFO - User 146512807: sound func;
+2020-05-14 17:54:56,461 - conversation.handlers - INFO - User 146512807: animal func;
+2020-05-14 17:55:05,407 - conversation.handlers - INFO - User 146512807: stickers func;
+2020-05-14 17:55:12,355 - conversation.handlers - INFO - User 146512807: stickers_yes func;
+2020-05-14 17:55:12,478 - conversation.handlers - INFO - User 146512807: consent func;
+2020-05-14 20:01:36,605 - conversation.handlers - INFO - User 384341805: fruit func;
+2020-05-14 20:10:35,709 - conversation.handlers - INFO - User 384341805: sound func;
+2020-05-14 20:10:48,401 - conversation.handlers - INFO - User 384341805: animal func;
+2020-05-14 20:10:50,317 - conversation.handlers - INFO - User 384341805: stickers func;
+2020-05-14 20:10:50,497 - conversation.handlers - INFO - User 384341805: consent func;
+2020-05-14 20:10:58,933 - conversation.handlers - INFO - User 384341805: current_mood func;
+2020-05-14 20:11:02,736 - conversation.handlers - INFO - User 384341805: press /start;
+2020-05-14 20:11:19,376 - conversation.handlers - INFO - User 384341805: fruit func;
+2020-05-14 20:11:24,288 - conversation.handlers - INFO - User 384341805: sound func;
+2020-05-14 20:11:24,926 - conversation.handlers - INFO - User 384341805: animal func;
+2020-05-14 20:11:25,683 - conversation.handlers - INFO - User 384341805: stickers func;
+2020-05-14 20:11:25,814 - conversation.handlers - INFO - User 384341805: consent func;
+2020-05-14 20:11:41,297 - conversation.handlers - INFO - User 384341805: current_mood func;
+2020-05-14 20:11:42,697 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 20:11:53,284 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 20:11:54,892 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-14 20:48:42,012 - conversation.handlers - INFO - User 157410042: press /start;
+2020-05-14 20:48:47,599 - conversation.handlers - INFO - User 157410042: fruit func;
+2020-05-14 20:48:49,665 - conversation.handlers - INFO - User 157410042: sound func;
+2020-05-14 20:48:52,886 - conversation.handlers - INFO - User 157410042: animal func;
+2020-05-14 20:48:59,047 - conversation.handlers - INFO - User 157410042: stickers func;
+2020-05-14 20:48:59,181 - conversation.handlers - INFO - User 157410042: consent func;
+2020-05-14 20:50:10,771 - conversation.handlers - INFO - User 157410042: current_mood func;
+2020-05-14 20:50:18,470 - conversation.handlers - INFO - User 157410042: press /start;
+2020-05-15 10:54:49,126 - conversation.handlers - INFO - User 239854294: press /start;
+2020-05-15 10:54:50,416 - conversation.handlers - INFO - User 239854294: fruit func;
+2020-05-15 10:54:54,420 - conversation.handlers - INFO - User 239854294: sound func;
+2020-05-15 10:54:59,672 - conversation.handlers - INFO - User 239854294: animal func;
+2020-05-15 10:55:02,599 - conversation.handlers - INFO - User 239854294: stickers func;
+2020-05-15 10:55:02,730 - conversation.handlers - INFO - User 239854294: consent func;
+2020-05-15 19:21:53,689 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-15 19:21:55,994 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-15 19:21:56,940 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-15 19:21:57,819 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-15 19:21:57,949 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-15 19:23:34,363 - conversation.handlers - INFO - User 73540097: press /start;
+2020-05-15 19:23:36,347 - conversation.handlers - INFO - User 73540097: fruit func;
+2020-05-15 19:23:39,568 - conversation.handlers - INFO - User 73540097: sound func;
+2020-05-15 19:23:43,716 - conversation.handlers - INFO - User 73540097: animal func;
+2020-05-15 19:23:46,191 - conversation.handlers - INFO - User 73540097: stickers func;
+2020-05-15 19:23:46,350 - conversation.handlers - INFO - User 73540097: consent func;
+2020-05-15 19:25:02,142 - conversation.handlers - INFO - User 142443248: press /start;
+2020-05-15 19:25:02,826 - conversation.handlers - INFO - User 374085418: press /start;
+2020-05-15 19:25:03,539 - conversation.handlers - INFO - User 142443248: fruit func;
+2020-05-15 19:25:07,349 - conversation.handlers - INFO - User 142443248: sound func;
+2020-05-15 19:25:14,070 - conversation.handlers - INFO - User 142443248: animal func;
+2020-05-15 19:25:20,972 - conversation.handlers - INFO - User 142443248: stickers func;
+2020-05-15 19:25:24,613 - conversation.handlers - INFO - User 142443248: stickers_yes func;
+2020-05-15 19:25:24,748 - conversation.handlers - INFO - User 142443248: consent func;
+2020-05-15 19:26:20,966 - conversation.handlers - INFO - User 280574358: press /start;
+2020-05-15 19:26:33,487 - conversation.handlers - INFO - User 73540097: current_mood func;
+2020-05-15 19:26:43,942 - conversation.handlers - INFO - User 142443248: current_mood func;
+2020-05-15 19:26:45,617 - conversation.handlers - INFO - User 73540097: press /start;
+2020-05-15 19:26:47,436 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:26:48,397 - conversation.handlers - INFO - User 280574358: fruit func;
+2020-05-15 19:26:49,004 - conversation.handlers - INFO - User 210674049: press /start;
+2020-05-15 19:26:52,239 - conversation.payment - INFO - User 73540097: try to subscribe;
+2020-05-15 19:26:52,760 - conversation.handlers - INFO - User 210674049: fruit func;
+2020-05-15 19:26:57,093 - conversation.handlers - INFO - User 210674049: sound func;
+2020-05-15 19:26:59,850 - conversation.handlers - INFO - User 280574358: sound func;
+2020-05-15 19:27:00,825 - conversation.handlers - INFO - User 210674049: animal func;
+2020-05-15 19:27:06,510 - conversation.handlers - INFO - User 210674049: stickers func;
+2020-05-15 19:27:07,119 - conversation.handlers - INFO - User 280574358: animal func;
+2020-05-15 19:27:09,006 - conversation.handlers - INFO - User 519271915: press /start;
+2020-05-15 19:27:09,624 - conversation.handlers - INFO - User 210674049: stickers_yes func;
+2020-05-15 19:27:09,780 - conversation.handlers - INFO - User 210674049: consent func;
+2020-05-15 19:27:11,170 - conversation.handlers - INFO - User 280574358: stickers func;
+2020-05-15 19:27:13,426 - conversation.handlers - INFO - User 519271915: fruit func;
+2020-05-15 19:27:13,722 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 19:27:16,465 - conversation.handlers - INFO - User 456966775: fruit func;
+2020-05-15 19:27:19,270 - conversation.handlers - INFO - User 280574358: stickers_yes func;
+2020-05-15 19:27:19,447 - conversation.handlers - INFO - User 280574358: consent func;
+2020-05-15 19:27:20,160 - conversation.handlers - INFO - User 519271915: sound func;
+2020-05-15 19:27:22,443 - conversation.handlers - INFO - User 456966775: sound func;
+2020-05-15 19:27:26,757 - conversation.handlers - INFO - User 519271915: animal func;
+2020-05-15 19:27:32,099 - conversation.handlers - INFO - User 456966775: animal func;
+2020-05-15 19:27:33,858 - conversation.handlers - INFO - User 519271915: stickers func;
+2020-05-15 19:27:35,682 - conversation.payment - INFO - User 73540097: get Invoice on month;
+2020-05-15 19:27:38,568 - conversation.handlers - INFO - User 456966775: stickers func;
+2020-05-15 19:27:39,253 - conversation.handlers - INFO - User 519271915: stickers_no func;
+2020-05-15 19:27:39,383 - conversation.handlers - INFO - User 519271915: consent func;
+2020-05-15 19:27:43,225 - conversation.handlers - INFO - User 456966775: stickers_yes func;
+2020-05-15 19:27:43,379 - conversation.handlers - INFO - User 456966775: consent func;
+2020-05-15 19:28:03,854 - conversation.handlers - INFO - User 229647463: press /start;
+2020-05-15 19:28:06,665 - conversation.handlers - INFO - User 229647463: fruit func;
+2020-05-15 19:28:14,790 - conversation.handlers - INFO - User 229647463: sound func;
+2020-05-15 19:28:17,439 - conversation.handlers - INFO - User 250510566: press /start;
+2020-05-15 19:28:20,219 - conversation.handlers - INFO - User 250510566: fruit func;
+2020-05-15 19:28:23,754 - conversation.handlers - INFO - User 229647463: animal func;
+2020-05-15 19:28:24,504 - conversation.handlers - INFO - User 2767445: press /start;
+2020-05-15 19:28:26,891 - conversation.handlers - INFO - User 250510566: sound func;
+2020-05-15 19:28:28,615 - conversation.handlers - INFO - User 2767445: fruit func;
+2020-05-15 19:28:29,199 - conversation.handlers - INFO - User 229647463: stickers func;
+2020-05-15 19:28:35,022 - conversation.handlers - INFO - User 250510566: animal func;
+2020-05-15 19:28:35,473 - conversation.handlers - INFO - User 2767445: sound func;
+2020-05-15 19:28:36,738 - conversation.handlers - INFO - User 229647463: stickers_yes func;
+2020-05-15 19:28:36,869 - conversation.handlers - INFO - User 229647463: consent func;
+2020-05-15 19:28:38,361 - conversation.handlers - INFO - User 250510566: stickers func;
+2020-05-15 19:28:41,521 - conversation.handlers - INFO - User 2767445: animal func;
+2020-05-15 19:28:42,941 - conversation.handlers - INFO - User 124832538: press /start;
+2020-05-15 19:28:44,837 - conversation.handlers - INFO - User 250510566: stickers_yes func;
+2020-05-15 19:28:44,955 - conversation.handlers - INFO - User 250510566: consent func;
+2020-05-15 19:28:45,364 - conversation.handlers - INFO - User 478208874: press /start;
+2020-05-15 19:28:47,365 - conversation.handlers - INFO - User 478208874: fruit func;
+2020-05-15 19:28:48,345 - conversation.handlers - INFO - User 124832538: fruit func;
+2020-05-15 19:28:48,346 - conversation.handlers - INFO - User 2767445: stickers func;
+2020-05-15 19:28:52,442 - conversation.handlers - INFO - User 2767445: stickers_yes func;
+2020-05-15 19:28:52,579 - conversation.handlers - INFO - User 2767445: consent func;
+2020-05-15 19:28:54,536 - conversation.handlers - INFO - User 124832538: sound func;
+2020-05-15 19:28:54,658 - conversation.handlers - INFO - User 478208874: sound func;
+2020-05-15 19:28:58,468 - conversation.handlers - INFO - User 478208874: animal func;
+2020-05-15 19:28:59,104 - conversation.handlers - INFO - User 124832538: animal func;
+2020-05-15 19:29:02,353 - conversation.handlers - INFO - User 478208874: stickers func;
+2020-05-15 19:29:03,182 - conversation.handlers - INFO - User 124832538: stickers func;
+2020-05-15 19:29:06,760 - conversation.handlers - INFO - User 478208874: stickers_yes func;
+2020-05-15 19:29:06,879 - conversation.handlers - INFO - User 478208874: consent func;
+2020-05-15 19:29:07,511 - conversation.handlers - INFO - User 124832538: stickers_yes func;
+2020-05-15 19:29:07,643 - conversation.handlers - INFO - User 124832538: consent func;
+2020-05-15 19:29:25,500 - conversation.handlers - INFO - User 142443248: press /start;
+2020-05-15 19:29:26,767 - conversation.handlers - INFO - User 16589165: press /start;
+2020-05-15 19:29:27,186 - conversation.payment - INFO - User 73540097: get Invoice on month;
+2020-05-15 19:29:27,782 - conversation.handlers - INFO - User 142443248: fruit func;
+2020-05-15 19:29:31,039 - conversation.handlers - INFO - User 16589165: fruit func;
+2020-05-15 19:29:38,526 - conversation.handlers - INFO - User 16589165: sound func;
+2020-05-15 19:29:38,725 - conversation.handlers - INFO - User 142443248: sound func;
+2020-05-15 19:29:45,026 - conversation.handlers - INFO - User 16589165: animal func;
+2020-05-15 19:29:46,288 - conversation.handlers - INFO - User 142443248: animal func;
+2020-05-15 19:29:46,852 - conversation.handlers - INFO - User 250510566: current_mood func;
+2020-05-15 19:29:47,816 - conversation.handlers - INFO - User 142443248: stickers func;
+2020-05-15 19:29:47,935 - conversation.handlers - INFO - User 142443248: consent func;
+2020-05-15 19:29:50,382 - conversation.handlers - INFO - User 16589165: stickers func;
+2020-05-15 19:29:50,674 - conversation.handlers - INFO - User 280574358: current_mood func;
+2020-05-15 19:29:53,842 - conversation.handlers - INFO - User 250510566: press /start;
+2020-05-15 19:29:59,031 - conversation.handlers - INFO - User 16589165: stickers_yes func;
+2020-05-15 19:29:59,154 - conversation.handlers - INFO - User 16589165: consent func;
+2020-05-15 19:30:07,034 - conversation.handlers - INFO - User 513683594: press /start;
+2020-05-15 19:30:08,927 - conversation.handlers - INFO - User 280574358: press /start;
+2020-05-15 19:30:10,868 - conversation.handlers - INFO - User 513683594: fruit func;
+2020-05-15 19:30:12,301 - conversation.handlers - INFO - User 478208874: current_mood func;
+2020-05-15 19:30:16,302 - conversation.handlers - INFO - User 280574358: fruit func;
+2020-05-15 19:30:17,464 - conversation.handlers - INFO - User 280574358: sound func;
+2020-05-15 19:30:18,701 - conversation.handlers - INFO - User 280574358: animal func;
+2020-05-15 19:30:21,007 - conversation.handlers - INFO - User 280574358: stickers func;
+2020-05-15 19:30:21,213 - conversation.handlers - INFO - User 280574358: consent func;
+2020-05-15 19:30:23,377 - conversation.handlers - INFO - User 478208874: press /start;
+2020-05-15 19:30:25,136 - conversation.handlers - INFO - User 124832538: current_mood func;
+2020-05-15 19:30:26,687 - conversation.handlers - INFO - User 512736884: press /start;
+2020-05-15 19:30:29,006 - conversation.handlers - INFO - User 512736884: fruit func;
+2020-05-15 19:30:38,089 - conversation.handlers - INFO - User 512736884: sound func;
+2020-05-15 19:30:38,658 - conversation.handlers - INFO - User 181927642: press /start;
+2020-05-15 19:30:38,989 - conversation.payment - INFO - User 73540097: subscribed
+2020-05-15 19:30:39,323 - conversation.handlers - INFO - User 124832538: press /start;
+2020-05-15 19:30:44,370 - conversation.handlers - INFO - User 512736884: animal func;
+2020-05-15 19:30:47,616 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-15 19:30:49,405 - conversation.handlers - INFO - User 512736884: stickers func;
+2020-05-15 19:30:56,010 - conversation.handlers - INFO - User 512736884: stickers_yes func;
+2020-05-15 19:30:56,136 - conversation.handlers - INFO - User 512736884: consent func;
+2020-05-15 19:30:57,157 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-15 19:30:57,301 - conversation.handlers - INFO - User 181927642: fruit func;
+2020-05-15 19:31:00,096 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-15 19:31:00,208 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    if update.message.chat_id in users:
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 19:31:00,904 - conversation.handlers - INFO - User 181927642: sound func;
+2020-05-15 19:31:01,267 - conversation.handlers - INFO - User 456966775: current_mood func;
+2020-05-15 19:31:01,419 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-15 19:31:02,985 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-15 19:31:03,979 - conversation.handlers - INFO - User 210674049: current_mood func;
+2020-05-15 19:31:04,325 - conversation.handlers - INFO - User 181927642: animal func;
+2020-05-15 19:31:05,102 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-15 19:31:05,230 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-15 19:31:06,157 - conversation.handlers - INFO - User 181927642: stickers func;
+2020-05-15 19:31:06,282 - conversation.handlers - INFO - User 181927642: consent func;
+2020-05-15 19:31:11,715 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:31:12,628 - conversation.handlers - INFO - User 513683594: sound func;
+2020-05-15 19:31:17,145 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:31:18,101 - conversation.handlers - INFO - User 513683594: animal func;
+2020-05-15 19:31:22,437 - conversation.handlers - INFO - User 513683594: stickers func;
+2020-05-15 19:31:27,110 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:31:30,304 - conversation.handlers - INFO - User 513683594: stickers_yes func;
+2020-05-15 19:31:30,465 - conversation.handlers - INFO - User 513683594: consent func;
+2020-05-15 19:31:42,843 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 19:32:20,069 - conversation.handlers - INFO - User 456966775: fruit func;
+2020-05-15 19:32:21,632 - conversation.handlers - INFO - User 456966775: sound func;
+2020-05-15 19:32:22,756 - conversation.handlers - INFO - User 94936835: press /start;
+2020-05-15 19:32:23,306 - conversation.handlers - INFO - User 456966775: animal func;
+2020-05-15 19:32:24,782 - conversation.handlers - INFO - User 456966775: stickers func;
+2020-05-15 19:32:24,902 - conversation.handlers - INFO - User 456966775: consent func;
+2020-05-15 19:33:13,578 - conversation.handlers - INFO - User 94936835: fruit func;
+2020-05-15 19:33:20,100 - conversation.handlers - INFO - User 94936835: sound func;
+2020-05-15 19:33:25,719 - conversation.handlers - INFO - User 94936835: animal func;
+2020-05-15 19:33:30,748 - conversation.handlers - INFO - User 94936835: stickers func;
+2020-05-15 19:33:34,251 - conversation.handlers - INFO - User 94936835: stickers_yes func;
+2020-05-15 19:33:34,371 - conversation.handlers - INFO - User 94936835: consent func;
+2020-05-15 19:35:01,672 - conversation.handlers - INFO - User 191013707: press /start;
+2020-05-15 19:35:04,043 - conversation.handlers - INFO - User 191013707: fruit func;
+2020-05-15 19:35:09,906 - conversation.handlers - INFO - User 191013707: sound func;
+2020-05-15 19:35:10,876 - conversation.handlers - INFO - User 230978898: press /start;
+2020-05-15 19:35:17,397 - conversation.handlers - INFO - User 191013707: animal func;
+2020-05-15 19:35:21,807 - conversation.handlers - INFO - User 191013707: stickers func;
+2020-05-15 19:35:26,939 - conversation.handlers - INFO - User 191013707: stickers_no func;
+2020-05-15 19:35:27,077 - conversation.handlers - INFO - User 191013707: consent func;
+2020-05-15 19:35:32,961 - conversation.handlers - INFO - User 230978898: fruit func;
+2020-05-15 19:36:07,709 - conversation.handlers - INFO - User 118946283: press /start;
+2020-05-15 19:36:12,047 - conversation.handlers - INFO - User 118946283: fruit func;
+2020-05-15 19:36:20,003 - conversation.handlers - INFO - User 118946283: sound func;
+2020-05-15 19:36:26,830 - conversation.handlers - INFO - User 118946283: animal func;
+2020-05-15 19:36:31,867 - conversation.handlers - INFO - User 118946283: stickers func;
+2020-05-15 19:36:37,603 - conversation.handlers - INFO - User 118946283: stickers_yes func;
+2020-05-15 19:36:37,731 - conversation.handlers - INFO - User 118946283: consent func;
+2020-05-15 19:37:50,292 - conversation.handlers - INFO - User 122974369: press /start;
+2020-05-15 19:37:52,224 - conversation.handlers - INFO - User 122974369: fruit func;
+2020-05-15 19:37:54,228 - conversation.handlers - INFO - User 122974369: sound func;
+2020-05-15 19:37:56,457 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 49, in answer
+    chat_id=users[update.message.chat_id], text=update.message.text
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-15 19:37:56,917 - conversation.handlers - INFO - User 122974369: animal func;
+2020-05-15 19:38:00,096 - conversation.handlers - INFO - User 122974369: stickers func;
+2020-05-15 19:38:06,748 - conversation.handlers - INFO - User 122974369: stickers_yes func;
+2020-05-15 19:38:06,880 - conversation.handlers - INFO - User 122974369: consent func;
+2020-05-15 19:38:31,920 - conversation.handlers - INFO - User 118946283: press /start;
+2020-05-15 19:38:34,808 - conversation.handlers - INFO - User 118946283: fruit func;
+2020-05-15 19:38:38,000 - conversation.handlers - INFO - User 118946283: sound func;
+2020-05-15 19:38:45,072 - conversation.handlers - INFO - User 118946283: animal func;
+2020-05-15 19:38:48,939 - conversation.handlers - INFO - User 118946283: stickers func;
+2020-05-15 19:38:49,103 - conversation.handlers - INFO - User 118946283: consent func;
+2020-05-15 19:39:22,243 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    if update.message.chat_id in users:
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 19:41:52,122 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 80, in done
+    context.bot.send_message(chat_id=users[chat_id], text=comrade_left_text)
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-15 19:41:55,387 - conversation.handlers - INFO - User 142443248: press /start;
+2020-05-15 19:41:56,685 - conversation.handlers - INFO - User 142443248: fruit func;
+2020-05-15 19:41:58,241 - conversation.handlers - INFO - User 142443248: sound func;
+2020-05-15 19:42:00,299 - conversation.handlers - INFO - User 142443248: animal func;
+2020-05-15 19:42:03,155 - conversation.handlers - INFO - User 142443248: stickers func;
+2020-05-15 19:42:03,280 - conversation.handlers - INFO - User 142443248: consent func;
+2020-05-15 19:43:27,544 - conversation.handlers - INFO - User 160022515: press /start;
+2020-05-15 19:43:29,763 - conversation.handlers - INFO - User 160022515: fruit func;
+2020-05-15 19:43:35,033 - conversation.handlers - INFO - User 160022515: sound func;
+2020-05-15 19:43:39,879 - conversation.handlers - INFO - User 160022515: animal func;
+2020-05-15 19:43:43,529 - conversation.handlers - INFO - User 160022515: stickers func;
+2020-05-15 19:43:47,721 - conversation.handlers - INFO - User 160022515: stickers_yes func;
+2020-05-15 19:43:47,913 - conversation.handlers - INFO - User 160022515: consent func;
+2020-05-15 19:44:00,940 - conversation.handlers - INFO - User 688317455: press /start;
+2020-05-15 19:44:19,413 - conversation.handlers - INFO - User 688317455: press /start;
+2020-05-15 19:44:31,535 - conversation.handlers - INFO - User 688317455: press /start;
+2020-05-15 19:44:40,272 - conversation.handlers - INFO - User 35769592: press /start;
+2020-05-15 19:44:43,470 - conversation.handlers - INFO - User 35769592: fruit func;
+2020-05-15 19:44:51,212 - conversation.handlers - INFO - User 35769592: sound func;
+2020-05-15 19:44:55,885 - conversation.handlers - INFO - User 35769592: animal func;
+2020-05-15 19:44:59,982 - conversation.handlers - INFO - User 35769592: stickers func;
+2020-05-15 19:45:04,874 - conversation.handlers - INFO - User 35769592: stickers_yes func;
+2020-05-15 19:45:04,999 - conversation.handlers - INFO - User 35769592: consent func;
+2020-05-15 19:45:21,380 - conversation.handlers - INFO - User 688317455: press /start;
+2020-05-15 19:45:25,869 - conversation.handlers - INFO - User 688317455: fruit func;
+2020-05-15 19:45:27,980 - conversation.handlers - INFO - User 688317455: sound func;
+2020-05-15 19:45:32,710 - conversation.handlers - INFO - User 688317455: animal func;
+2020-05-15 19:45:36,451 - conversation.handlers - INFO - User 688317455: stickers func;
+2020-05-15 19:45:40,411 - conversation.handlers - INFO - User 688317455: stickers_yes func;
+2020-05-15 19:45:40,534 - conversation.handlers - INFO - User 688317455: consent func;
+2020-05-15 19:46:15,040 - conversation.handlers - INFO - User 438310817: press /start;
+2020-05-15 19:46:32,408 - conversation.handlers - INFO - User 438310817: fruit func;
+2020-05-15 19:47:49,775 - conversation.handlers - INFO - User 688317455: current_mood func;
+2020-05-15 19:47:56,420 - conversation.handlers - INFO - User 688317455: press /start;
+2020-05-15 19:48:04,558 - conversation.handlers - INFO - User 35769592: current_mood func;
+2020-05-15 19:48:14,350 - conversation.handlers - INFO - User 35769592: press /start;
+2020-05-15 19:49:41,312 - conversation.handlers - INFO - User 143057672: press /start;
+2020-05-15 19:49:43,983 - conversation.handlers - INFO - User 146512807: current_mood func;
+2020-05-15 19:49:45,719 - conversation.handlers - INFO - User 143057672: fruit func;
+2020-05-15 19:49:52,094 - conversation.handlers - INFO - User 143057672: sound func;
+2020-05-15 19:49:57,695 - conversation.handlers - INFO - User 143057672: animal func;
+2020-05-15 19:50:10,232 - conversation.handlers - INFO - User 35769592: press /start;
+2020-05-15 19:50:11,921 - conversation.handlers - INFO - User 35769592: fruit func;
+2020-05-15 19:50:13,286 - conversation.handlers - INFO - User 143057672: stickers func;
+2020-05-15 19:50:14,627 - conversation.handlers - INFO - User 35769592: sound func;
+2020-05-15 19:50:17,713 - conversation.handlers - INFO - User 143057672: stickers_yes func;
+2020-05-15 19:50:17,836 - conversation.handlers - INFO - User 143057672: consent func;
+2020-05-15 19:50:20,099 - conversation.handlers - INFO - User 35769592: animal func;
+2020-05-15 19:50:22,825 - conversation.handlers - INFO - User 35769592: stickers func;
+2020-05-15 19:50:22,947 - conversation.handlers - INFO - User 35769592: consent func;
+2020-05-15 19:51:48,309 - conversation.handlers - INFO - User 274516177: current_mood func;
+2020-05-15 19:51:51,038 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:52:17,004 - conversation.handlers - INFO - User 274516177: press /start;
+2020-05-15 19:52:18,851 - conversation.handlers - INFO - User 274516177: fruit func;
+2020-05-15 19:52:23,994 - conversation.handlers - INFO - User 274516177: sound func;
+2020-05-15 19:52:26,656 - conversation.handlers - INFO - User 274516177: animal func;
+2020-05-15 19:52:28,743 - conversation.handlers - INFO - User 274516177: stickers func;
+2020-05-15 19:52:28,862 - conversation.handlers - INFO - User 274516177: consent func;
+2020-05-15 19:55:19,997 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 135, in to_google_sheet
+    google_answers['current_mood'][answers[-1]]]
+KeyError: 'Другое'
+2020-05-15 19:55:27,199 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 19:55:35,233 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 135, in to_google_sheet
+    google_answers['current_mood'][answers[-1]]]
+KeyError: 'Другое'
+2020-05-15 19:56:03,700 - conversation.handlers - INFO - User 626235917: press /start;
+2020-05-15 19:56:12,565 - conversation.handlers - INFO - User 626235917: fruit func;
+2020-05-15 19:56:22,525 - conversation.handlers - INFO - User 626235917: sound func;
+2020-05-15 19:58:25,333 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    if update.message.chat_id in users:
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 20:02:07,801 - conversation.handlers - INFO - User 626235917: animal func;
+2020-05-15 20:02:15,932 - conversation.handlers - INFO - User 626235917: stickers func;
+2020-05-15 20:02:21,778 - conversation.handlers - INFO - User 152747925: press /start;
+2020-05-15 20:02:24,017 - conversation.handlers - INFO - User 626235917: stickers_yes func;
+2020-05-15 20:02:24,144 - conversation.handlers - INFO - User 626235917: consent func;
+2020-05-15 20:02:25,972 - conversation.handlers - INFO - User 152747925: fruit func;
+2020-05-15 20:02:32,654 - conversation.handlers - INFO - User 152747925: sound func;
+2020-05-15 20:02:41,043 - conversation.handlers - INFO - User 152747925: animal func;
+2020-05-15 20:02:57,272 - conversation.handlers - INFO - User 152747925: stickers func;
+2020-05-15 20:07:41,177 - conversation.handlers - INFO - User 94936835: current_mood func;
+2020-05-15 20:07:41,773 - conversation.handlers - INFO - User 38188695: press /start;
+2020-05-15 20:07:47,923 - conversation.handlers - INFO - User 38188695: fruit func;
+2020-05-15 20:07:50,492 - conversation.handlers - INFO - User 456966775: current_mood func;
+2020-05-15 20:07:53,521 - conversation.handlers - INFO - User 94936835: press /start;
+2020-05-15 20:07:56,292 - conversation.handlers - INFO - User 38188695: sound func;
+2020-05-15 20:07:58,743 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 20:08:03,929 - conversation.handlers - INFO - User 38188695: animal func;
+2020-05-15 20:08:14,371 - conversation.handlers - INFO - User 38188695: stickers func;
+2020-05-15 20:08:19,231 - conversation.handlers - INFO - User 38188695: stickers_yes func;
+2020-05-15 20:08:19,420 - conversation.handlers - INFO - User 38188695: consent func;
+2020-05-15 20:12:11,738 - conversation.handlers - INFO - User 213115436: press /start;
+2020-05-15 20:12:15,526 - conversation.handlers - INFO - User 213115436: fruit func;
+2020-05-15 20:12:27,486 - conversation.handlers - INFO - User 213115436: sound func;
+2020-05-15 20:12:44,098 - conversation.handlers - INFO - User 213115436: animal func;
+2020-05-15 20:12:49,744 - conversation.handlers - INFO - User 213115436: stickers func;
+2020-05-15 20:12:53,330 - conversation.handlers - INFO - User 213115436: stickers_no func;
+2020-05-15 20:12:53,460 - conversation.handlers - INFO - User 213115436: consent func;
+2020-05-15 20:16:57,894 - conversation.handlers - INFO - User 239353989: press /start;
+2020-05-15 20:17:03,956 - conversation.handlers - INFO - User 239353989: fruit func;
+2020-05-15 20:17:14,504 - conversation.handlers - INFO - User 239353989: sound func;
+2020-05-15 20:17:23,031 - conversation.handlers - INFO - User 239353989: animal func;
+2020-05-15 20:17:26,307 - conversation.handlers - INFO - User 239353989: stickers func;
+2020-05-15 20:17:32,476 - conversation.handlers - INFO - User 239353989: stickers_yes func;
+2020-05-15 20:17:32,608 - conversation.handlers - INFO - User 239353989: consent func;
+2020-05-15 20:18:37,677 - conversation.handlers - INFO - User 252133838: press /start;
+2020-05-15 20:18:53,917 - conversation.handlers - INFO - User 432279339: fruit func;
+2020-05-15 20:18:56,029 - conversation.handlers - INFO - User 432279339: sound func;
+2020-05-15 20:18:58,374 - conversation.handlers - INFO - User 432279339: animal func;
+2020-05-15 20:19:01,811 - conversation.handlers - INFO - User 432279339: stickers func;
+2020-05-15 20:19:01,938 - conversation.handlers - INFO - User 432279339: consent func;
+2020-05-15 20:19:07,641 - conversation.handlers - INFO - User 239353989: current_mood func;
+2020-05-15 20:19:10,891 - conversation.handlers - INFO - User 252133838: fruit func;
+2020-05-15 20:19:17,766 - conversation.handlers - INFO - User 252133838: sound func;
+2020-05-15 20:19:27,113 - conversation.handlers - INFO - User 252133838: animal func;
+2020-05-15 20:19:34,262 - conversation.handlers - INFO - User 252133838: stickers func;
+2020-05-15 20:19:42,788 - conversation.handlers - INFO - User 252133838: stickers_yes func;
+2020-05-15 20:19:42,930 - conversation.handlers - INFO - User 252133838: consent func;
+2020-05-15 20:23:19,335 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    if update.message.chat_id in users:
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 20:26:29,962 - conversation.handlers - INFO - User 561560103: press /start;
+2020-05-15 20:26:33,039 - conversation.handlers - INFO - User 561560103: fruit func;
+2020-05-15 20:26:34,499 - conversation.handlers - INFO - User 561560103: sound func;
+2020-05-15 20:26:35,399 - conversation.handlers - INFO - User 561560103: animal func;
+2020-05-15 20:26:36,311 - conversation.handlers - INFO - User 561560103: stickers func;
+2020-05-15 20:26:36,434 - conversation.handlers - INFO - User 561560103: consent func;
+2020-05-15 20:27:19,546 - conversation.handlers - INFO - User 142443248: current_mood func;
+2020-05-15 20:27:28,011 - conversation.handlers - INFO - User 142443248: press /start;
+2020-05-15 20:27:53,396 - conversation.handlers - INFO - User 142443248: press /start;
+2020-05-15 20:27:57,332 - conversation.payment - INFO - User 142443248: try to subscribe;
+2020-05-15 20:28:06,315 - conversation.payment - INFO - User 142443248: get Invoice on 3days;
+2020-05-15 20:28:46,362 - conversation.payment - INFO - User 142443248: get Invoice on month;
+2020-05-15 20:28:52,276 - conversation.payment - INFO - User 142443248: refused to subscribe;
+2020-05-15 20:28:55,167 - conversation.payment - INFO - User 142443248: take other;
+2020-05-15 20:29:11,047 - conversation.handlers - INFO - User 243748814: press /start;
+2020-05-15 20:29:13,046 - conversation.handlers - INFO - User 284498087: press /start;
+2020-05-15 20:29:14,694 - conversation.handlers - INFO - User 243748814: fruit func;
+2020-05-15 20:29:14,821 - conversation.payment - INFO - User 142443248: sps_buy;
+2020-05-15 20:29:19,272 - conversation.handlers - INFO - User 284498087: fruit func;
+2020-05-15 20:29:19,449 - conversation.handlers - INFO - User 243748814: sound func;
+2020-05-15 20:29:25,332 - conversation.handlers - INFO - User 243748814: animal func;
+2020-05-15 20:29:28,005 - conversation.handlers - INFO - User 284498087: sound func;
+2020-05-15 20:29:33,284 - conversation.handlers - INFO - User 284498087: animal func;
+2020-05-15 20:29:41,497 - conversation.handlers - INFO - User 284498087: stickers func;
+2020-05-15 20:29:46,326 - conversation.handlers - INFO - User 284498087: stickers_yes func;
+2020-05-15 20:29:46,457 - conversation.handlers - INFO - User 284498087: consent func;
+2020-05-15 20:29:55,821 - conversation.handlers - INFO - User 243748814: stickers func;
+2020-05-15 20:30:00,192 - conversation.handlers - INFO - User 243748814: stickers_yes func;
+2020-05-15 20:30:00,333 - conversation.handlers - INFO - User 243748814: consent func;
+2020-05-15 20:32:03,290 - conversation.handlers - INFO - User 388366784: press /start;
+2020-05-15 20:32:06,406 - conversation.handlers - INFO - User 388366784: fruit func;
+2020-05-15 20:32:11,917 - conversation.handlers - INFO - User 561560103: current_mood func;
+2020-05-15 20:32:14,809 - conversation.handlers - INFO - User 388366784: sound func;
+2020-05-15 20:32:18,588 - conversation.handlers - INFO - User 561560103: press /start;
+2020-05-15 20:32:20,304 - conversation.handlers - INFO - User 388366784: animal func;
+2020-05-15 20:32:26,140 - conversation.handlers - INFO - User 388366784: stickers func;
+2020-05-15 20:32:30,749 - conversation.handlers - INFO - User 388366784: stickers_yes func;
+2020-05-15 20:32:30,875 - conversation.handlers - INFO - User 388366784: consent func;
+2020-05-15 20:32:40,621 - conversation.payment - INFO - User 561560103: try to subscribe;
+2020-05-15 20:32:56,507 - conversation.payment - INFO - User 561560103: get Invoice on week;
+2020-05-15 20:34:35,976 - conversation.handlers - INFO - User 124832538: press /start;
+2020-05-15 20:34:36,238 - conversation.payment - INFO - User 561560103: subscribed
+2020-05-15 20:34:46,812 - conversation.handlers - INFO - User 124832538: fruit func;
+2020-05-15 20:34:49,002 - conversation.handlers - INFO - User 124832538: sound func;
+2020-05-15 20:34:50,751 - conversation.handlers - INFO - User 124832538: animal func;
+2020-05-15 20:34:54,649 - conversation.handlers - INFO - User 124832538: stickers func;
+2020-05-15 20:34:54,775 - conversation.handlers - INFO - User 124832538: consent func;
+2020-05-15 20:35:25,744 - conversation.handlers - INFO - User 124832538: press /start;
+2020-05-15 20:35:26,124 - conversation.handlers - INFO - User 243748814: current_mood func;
+2020-05-15 20:35:27,835 - conversation.handlers - INFO - User 124832538: fruit func;
+2020-05-15 20:35:29,347 - conversation.handlers - INFO - User 124832538: sound func;
+2020-05-15 20:35:31,558 - conversation.handlers - INFO - User 124832538: animal func;
+2020-05-15 20:35:33,323 - conversation.handlers - INFO - User 124832538: stickers func;
+2020-05-15 20:35:33,444 - conversation.handlers - INFO - User 124832538: consent func;
+2020-05-15 20:35:34,598 - conversation.handlers - INFO - User 243748814: press /start;
+2020-05-15 20:36:19,456 - conversation.payment - INFO - User 142443248: try to subscribe;
+2020-05-15 20:36:27,298 - conversation.payment - INFO - User 142443248: get Invoice on week;
+2020-05-15 20:36:29,788 - conversation.payment - INFO - User 142443248: refused to subscribe;
+2020-05-15 20:36:32,843 - conversation.payment - INFO - User 142443248: take 1-2 reason;
+2020-05-15 20:36:32,968 - conversation.payment - INFO - User 142443248: sps_buy;
+2020-05-15 20:36:34,529 - conversation.handlers - INFO - User 284498087: current_mood func;
+2020-05-15 20:36:42,964 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 20:36:45,404 - conversation.handlers - INFO - User 28035107: press /start;
+2020-05-15 20:36:47,874 - conversation.handlers - INFO - User 28035107: fruit func;
+2020-05-15 20:36:56,997 - conversation.handlers - INFO - User 28035107: sound func;
+2020-05-15 20:37:02,635 - conversation.handlers - INFO - User 28035107: animal func;
+2020-05-15 20:37:12,569 - conversation.handlers - INFO - User 28035107: stickers func;
+2020-05-15 20:37:17,586 - conversation.handlers - INFO - User 28035107: stickers_yes func;
+2020-05-15 20:37:17,723 - conversation.handlers - INFO - User 28035107: consent func;
+2020-05-15 20:37:20,007 - conversation.payment - INFO - User 142443248: try to subscribe;
+2020-05-15 20:37:21,384 - conversation.payment - INFO - User 142443248: get Invoice on 3days;
+2020-05-15 20:39:06,193 - conversation.handlers - INFO - User 139423001: press /start;
+2020-05-15 20:39:08,435 - conversation.handlers - INFO - User 139423001: fruit func;
+2020-05-15 20:39:15,998 - conversation.handlers - INFO - User 139423001: sound func;
+2020-05-15 20:39:22,909 - conversation.handlers - INFO - User 139423001: animal func;
+2020-05-15 20:39:28,310 - conversation.handlers - INFO - User 139423001: stickers func;
+2020-05-15 20:39:31,949 - conversation.handlers - INFO - User 139423001: stickers_yes func;
+2020-05-15 20:39:32,109 - conversation.handlers - INFO - User 139423001: consent func;
+2020-05-15 20:45:08,943 - conversation.handlers - INFO - User 456966775: fruit func;
+2020-05-15 20:45:21,676 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 20:45:30,611 - conversation.payment - INFO - User 561560103: refused to subscribe;
+2020-05-15 20:45:40,170 - conversation.payment - INFO - User 561560103: take 1-2 reason;
+2020-05-15 20:45:40,344 - conversation.payment - INFO - User 561560103: sps_buy;
+2020-05-15 20:45:47,150 - conversation.handlers - INFO - User 561560103: press /start;
+2020-05-15 20:46:03,256 - conversation.handlers - INFO - User 260630786: press /start;
+2020-05-15 20:46:07,564 - conversation.handlers - INFO - User 260630786: fruit func;
+2020-05-15 20:46:08,371 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 20:46:09,769 - conversation.handlers - INFO - User 456966775: fruit func;
+2020-05-15 20:46:11,784 - conversation.handlers - INFO - User 456966775: sound func;
+2020-05-15 20:46:12,998 - conversation.handlers - INFO - User 456966775: animal func;
+2020-05-15 20:46:14,085 - conversation.handlers - INFO - User 456966775: stickers func;
+2020-05-15 20:46:14,203 - conversation.handlers - INFO - User 456966775: consent func;
+2020-05-15 20:46:26,610 - conversation.handlers - INFO - User 456966775: current_mood func;
+2020-05-15 20:46:32,707 - conversation.handlers - INFO - User 456966775: press /start;
+2020-05-15 20:46:41,076 - conversation.payment - INFO - User 456966775: try to subscribe;
+2020-05-15 20:47:04,676 - conversation.handlers - INFO - User 139423001: current_mood func;
+2020-05-15 20:47:10,126 - conversation.handlers - INFO - User 139423001: press /start;
+2020-05-15 20:47:13,161 - conversation.payment - INFO - User 456966775: get Invoice on 3days;
+2020-05-15 20:47:22,248 - conversation.handlers - INFO - User 139423001: fruit func;
+2020-05-15 20:47:28,612 - conversation.handlers - INFO - User 139423001: sound func;
+2020-05-15 20:47:32,594 - conversation.handlers - INFO - User 139423001: animal func;
+2020-05-15 20:47:35,252 - conversation.handlers - INFO - User 139423001: stickers func;
+2020-05-15 20:47:35,377 - conversation.handlers - INFO - User 139423001: consent func;
+2020-05-15 20:47:59,324 - conversation.payment - INFO - User 456966775: get Invoice on week;
+2020-05-15 20:48:01,354 - conversation.payment - INFO - User 456966775: get Invoice on month;
+2020-05-15 20:48:03,936 - conversation.payment - INFO - User 456966775: get Invoice on 3days;
+2020-05-15 20:48:38,949 - conversation.handlers - INFO - User 432279339: current_mood func;
+2020-05-15 20:48:41,379 - conversation.handlers - INFO - User 252133838: current_mood func;
+2020-05-15 20:48:52,613 - conversation.handlers - INFO - User 432279339: press /start;
+2020-05-15 20:50:01,955 - conversation.handlers - INFO - User 252133838: press /start;
+2020-05-15 20:50:13,550 - conversation.handlers - INFO - User 252133838: fruit func;
+2020-05-15 20:54:35,038 - conversation.handlers - INFO - User 336714371: press /start;
+2020-05-15 20:54:43,290 - conversation.handlers - INFO - User 336714371: fruit func;
+2020-05-15 20:54:48,112 - conversation.handlers - INFO - User 230978898: sound func;
+2020-05-15 20:54:48,750 - conversation.handlers - INFO - User 336714371: sound func;
+2020-05-15 20:54:54,162 - conversation.handlers - INFO - User 230978898: animal func;
+2020-05-15 20:54:56,165 - conversation.handlers - INFO - User 336714371: animal func;
+2020-05-15 20:54:58,998 - conversation.handlers - INFO - User 230978898: stickers func;
+2020-05-15 20:55:04,279 - conversation.handlers - INFO - User 230978898: stickers_no func;
+2020-05-15 20:55:04,394 - conversation.handlers - INFO - User 230978898: consent func;
+2020-05-15 20:55:05,727 - conversation.handlers - INFO - User 336714371: stickers func;
+2020-05-15 20:55:10,472 - conversation.handlers - INFO - User 336714371: stickers_yes func;
+2020-05-15 20:55:10,604 - conversation.handlers - INFO - User 336714371: consent func;
+2020-05-15 20:56:14,083 - conversation.handlers - INFO - User 336714371: current_mood func;
+2020-05-15 20:56:20,672 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 20:56:32,424 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 20:56:32,944 - conversation.payment - INFO - User 456966775: subscribed
+2020-05-15 20:56:37,960 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 20:57:59,841 - conversation.handlers - INFO - User 17793632: press /start;
+2020-05-15 20:58:02,411 - conversation.handlers - INFO - User 17793632: fruit func;
+2020-05-15 20:58:40,875 - conversation.handlers - INFO - User 17793632: sound func;
+2020-05-15 20:58:46,239 - conversation.handlers - INFO - User 360869102: press /start;
+2020-05-15 20:58:46,944 - conversation.handlers - INFO - User 17793632: animal func;
+2020-05-15 20:58:49,201 - conversation.handlers - INFO - User 360869102: fruit func;
+2020-05-15 20:58:49,905 - conversation.handlers - INFO - User 17793632: stickers func;
+2020-05-15 20:58:54,818 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 20:59:02,960 - conversation.handlers - INFO - User 17793632: stickers_yes func;
+2020-05-15 20:59:03,087 - conversation.handlers - INFO - User 17793632: consent func;
+2020-05-15 20:59:03,784 - conversation.handlers - INFO - User 360869102: sound func;
+2020-05-15 20:59:13,856 - conversation.handlers - INFO - User 360869102: animal func;
+2020-05-15 20:59:22,684 - conversation.handlers - INFO - User 360869102: stickers func;
+2020-05-15 20:59:28,483 - conversation.handlers - INFO - User 360869102: stickers_yes func;
+2020-05-15 20:59:28,605 - conversation.handlers - INFO - User 360869102: consent func;
+2020-05-15 21:00:23,710 - conversation.handlers - INFO - User 360869102: current_mood func;
+2020-05-15 21:00:28,503 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 21:00:39,220 - conversation.handlers - INFO - User 360869102: press /start;
+2020-05-15 21:00:43,295 - conversation.handlers - INFO - User 360869102: fruit func;
+2020-05-15 21:00:44,665 - conversation.handlers - INFO - User 360869102: sound func;
+2020-05-15 21:00:47,876 - conversation.handlers - INFO - User 384341805: press /start;
+2020-05-15 21:00:48,752 - conversation.handlers - INFO - User 360869102: animal func;
+2020-05-15 21:00:50,552 - conversation.handlers - INFO - User 374947170: press /start;
+2020-05-15 21:00:52,701 - conversation.handlers - INFO - User 360869102: stickers func;
+2020-05-15 21:00:52,821 - conversation.handlers - INFO - User 360869102: consent func;
+2020-05-15 21:00:53,438 - conversation.handlers - INFO - User 374947170: fruit func;
+2020-05-15 21:00:58,333 - conversation.handlers - INFO - User 374947170: sound func;
+2020-05-15 21:01:03,153 - conversation.handlers - INFO - User 374947170: animal func;
+2020-05-15 21:01:06,795 - conversation.handlers - INFO - User 374947170: stickers func;
+2020-05-15 21:01:09,537 - conversation.handlers - INFO - User 374947170: stickers_yes func;
+2020-05-15 21:01:09,761 - conversation.handlers - INFO - User 374947170: consent func;
+2020-05-15 21:02:04,788 - conversation.handlers - INFO - User 239854294: current_mood func;
+2020-05-15 21:02:08,556 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 21:02:11,442 - conversation.handlers - INFO - User 374947170: current_mood func;
+2020-05-15 21:02:14,943 - conversation.handlers - INFO - User 239854294: press /start;
+2020-05-15 21:02:15,536 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 21:02:16,243 - conversation.handlers - INFO - User 239854294: fruit func;
+2020-05-15 21:02:55,176 - conversation.handlers - INFO - User 114717100: press /start;
+2020-05-15 21:02:57,696 - conversation.handlers - INFO - User 114717100: fruit func;
+2020-05-15 21:03:03,167 - conversation.handlers - INFO - User 114717100: sound func;
+2020-05-15 21:03:10,935 - conversation.handlers - INFO - User 114717100: animal func;
+2020-05-15 21:03:16,848 - conversation.handlers - INFO - User 114717100: stickers func;
+2020-05-15 21:03:26,018 - conversation.handlers - INFO - User 114717100: stickers_yes func;
+2020-05-15 21:03:26,142 - conversation.handlers - INFO - User 114717100: consent func;
+2020-05-15 21:03:52,167 - conversation.handlers - INFO - User 499743315: press /start;
+2020-05-15 21:03:55,107 - conversation.handlers - INFO - User 499743315: fruit func;
+2020-05-15 21:09:16,383 - conversation.handlers - INFO - User 201010403: press /start;
+2020-05-15 21:09:18,319 - conversation.handlers - INFO - User 201010403: fruit func;
+2020-05-15 21:09:23,988 - conversation.handlers - INFO - User 201010403: sound func;
+2020-05-15 21:09:27,907 - conversation.handlers - INFO - User 201010403: animal func;
+2020-05-15 21:09:32,422 - conversation.handlers - INFO - User 201010403: stickers func;
+2020-05-15 21:09:35,022 - conversation.handlers - INFO - User 201010403: stickers_yes func;
+2020-05-15 21:09:35,193 - conversation.handlers - INFO - User 201010403: consent func;
+2020-05-15 21:11:00,213 - conversation.handlers - INFO - User 49138131: press /start;
+2020-05-15 21:11:04,311 - conversation.handlers - INFO - User 49138131: fruit func;
+2020-05-15 21:11:10,025 - conversation.handlers - INFO - User 49138131: sound func;
+2020-05-15 21:11:12,046 - conversation.handlers - INFO - User 318737830: press /start;
+2020-05-15 21:11:15,280 - conversation.handlers - INFO - User 318737830: fruit func;
+2020-05-15 21:11:16,060 - conversation.handlers - INFO - User 49138131: animal func;
+2020-05-15 21:11:21,251 - conversation.handlers - INFO - User 318737830: sound func;
+2020-05-15 21:11:22,754 - conversation.handlers - INFO - User 49138131: stickers func;
+2020-05-15 21:11:25,354 - conversation.handlers - INFO - User 318737830: animal func;
+2020-05-15 21:11:25,990 - conversation.handlers - INFO - User 49138131: stickers_yes func;
+2020-05-15 21:11:26,110 - conversation.handlers - INFO - User 49138131: consent func;
+2020-05-15 21:11:27,622 - conversation.handlers - INFO - User 318737830: stickers func;
+2020-05-15 21:11:31,437 - conversation.handlers - INFO - User 318737830: stickers_yes func;
+2020-05-15 21:11:31,557 - conversation.handlers - INFO - User 318737830: consent func;
+2020-05-15 21:11:54,389 - conversation.handlers - INFO - User 318737830: press /start;
+2020-05-15 21:11:56,379 - conversation.handlers - INFO - User 318737830: fruit func;
+2020-05-15 21:11:57,829 - conversation.handlers - INFO - User 318737830: sound func;
+2020-05-15 21:11:59,515 - conversation.handlers - INFO - User 318737830: animal func;
+2020-05-15 21:12:00,843 - conversation.handlers - INFO - User 318737830: stickers func;
+2020-05-15 21:12:02,557 - conversation.handlers - INFO - User 318737830: stickers_yes func;
+2020-05-15 21:12:02,680 - conversation.handlers - INFO - User 318737830: consent func;
+2020-05-15 21:17:50,887 - conversation.handlers - INFO - User 264338074: press /start;
+2020-05-15 21:17:54,667 - conversation.handlers - INFO - User 264338074: fruit func;
+2020-05-15 21:17:58,456 - conversation.handlers - INFO - User 264338074: sound func;
+2020-05-15 21:18:02,385 - conversation.handlers - INFO - User 264338074: animal func;
+2020-05-15 21:18:08,793 - conversation.handlers - INFO - User 264338074: stickers func;
+2020-05-15 21:18:12,614 - conversation.handlers - INFO - User 264338074: stickers_yes func;
+2020-05-15 21:18:13,094 - conversation.handlers - INFO - User 264338074: consent func;
+2020-05-15 21:19:11,968 - conversation.handlers - INFO - User 67482449: press /start;
+2020-05-15 21:19:16,944 - conversation.handlers - INFO - User 67482449: fruit func;
+2020-05-15 21:19:22,756 - conversation.handlers - INFO - User 67482449: sound func;
+2020-05-15 21:19:30,727 - conversation.handlers - INFO - User 67482449: animal func;
+2020-05-15 21:19:41,474 - conversation.handlers - INFO - User 67482449: stickers func;
+2020-05-15 21:19:45,165 - conversation.handlers - INFO - User 67482449: stickers_yes func;
+2020-05-15 21:19:45,286 - conversation.handlers - INFO - User 67482449: consent func;
+Database exist
+.env exist
+Starting
+Started succesfully
+{} []
+[207534011]
+{} []
+[207534011]
+[]
+{} []
+[31995053]
+[]
+[5260328]
+{} [5260328]
+[]
+{5260328: 68758887, 68758887: 5260328} []
+{} []
+{} []
+[536300910]
+[536300910]
+[]
+{} []
+[230239530]
+{} [230239530]
+[]
+{} []
+{} []
+[181927642]
+[]
+[274516177]
+[]
+{181927642: 217814660, 217814660: 181927642} []
+{181927642: 217814660, 217814660: 181927642} []
+{181927642: 217814660, 217814660: 181927642} []
+[228530031]
+{181927642: 217814660, 217814660: 181927642} []
+[228530031]
+[]
+{181927642: 217814660, 217814660: 181927642} []
+{181927642: 217814660, 217814660: 181927642} []
+[415251866]
+{} [415251866]
+{} [415251866]
+[]
+{} []
+[292584438]
+{} []
+[274516177]
+[]
+[384341805]
+{274516177: 146512807, 146512807: 274516177} []
+[384341805]
+{274516177: 146512807, 146512807: 274516177} []
+{274516177: 146512807, 146512807: 274516177} []
+[157410042]
+{274516177: 146512807, 146512807: 274516177} []
+{274516177: 146512807, 146512807: 274516177} []
+[239854294]
+[]
+[73540097]
+[]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294} []
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294} []
+[210674049]
+[]
+[519271915]
+[]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294, 210674049: 280574358, 280574358: 210674049} []
+[229647463]
+[]
+[478208874]
+[]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294, 229647463: 250510566, 250510566: 229647463, 478208874: 124832538, 124832538: 478208874} []
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294, 478208874: 124832538, 124832538: 478208874} []
+[142443248]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294} [142443248]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294} [142443248]
+[]
+{274516177: 146512807, 146512807: 274516177, 239854294: 68758887, 68758887: 239854294, 142443248: 280574358, 280574358: 142443248} []
+{274516177: 146512807, 146512807: 274516177, 142443248: 280574358, 280574358: 142443248} []
+[16589165]
+{274516177: 146512807, 146512807: 274516177, 142443248: 280574358, 280574358: 142443248} [16589165]
+[]
+[181927642]
+[]
+[456966775]
+{274516177: 146512807, 146512807: 274516177, 142443248: 280574358, 280574358: 142443248, 16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642} [456966775]
+[]
+[118946283]
+[118946283]
+[]
+{274516177: 146512807, 146512807: 274516177, 16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 456966775: 94936835, 94936835: 456966775, 118946283: 142443248, 142443248: 118946283} []
+[35769592]
+[]
+{274516177: 146512807, 146512807: 274516177, 16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 456966775: 94936835, 94936835: 456966775, 118946283: 142443248, 142443248: 118946283} []
+{274516177: 146512807, 146512807: 274516177, 16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 456966775: 94936835, 94936835: 456966775, 118946283: 142443248, 142443248: 118946283} []
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 456966775: 94936835, 94936835: 456966775, 118946283: 142443248, 142443248: 118946283} []
+[35769592]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 456966775: 94936835, 94936835: 456966775, 118946283: 142443248, 142443248: 118946283} [35769592]
+[]
+[626235917]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 118946283: 142443248, 142443248: 118946283, 35769592: 274516177, 274516177: 35769592} [626235917]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 118946283: 142443248, 142443248: 118946283, 35769592: 274516177, 274516177: 35769592} [626235917]
+[]
+[213115436]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 118946283: 142443248, 142443248: 118946283, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917} []
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 118946283: 142443248, 142443248: 118946283, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917} []
+[432279339]
+[]
+[561560103]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339} [561560103]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339} []
+[243748814]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339} []
+[124832538]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339} [124832538]
+[]
+[139423001]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339, 124832538: 28035107, 28035107: 124832538} [139423001]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339, 124832538: 28035107, 28035107: 124832538} [139423001]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339, 124832538: 28035107, 28035107: 124832538} []
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 432279339: 252133838, 252133838: 432279339, 124832538: 28035107, 28035107: 124832538} []
+[139423001]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538} [139423001]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538} [139423001]
+[]
+[336714371]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001} []
+[17793632]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001} []
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001} []
+[360869102]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001} []
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001} []
+[201010403]
+[]
+[318737830]
+[]
+{16589165: 68758887, 68758887: 16589165, 181927642: 513683594, 513683594: 181927642, 35769592: 274516177, 274516177: 35769592, 626235917: 38188695, 38188695: 626235917, 124832538: 28035107, 28035107: 124832538, 139423001: 230978898, 230978898: 139423001, 201010403: 49138131, 49138131: 201010403, 318737830: 264338074, 264338074: 318737830}2020-05-15 21:21:58,717 - conversation.handlers - INFO - User 1025203745: press /start;
+2020-05-15 21:22:08,075 - conversation.handlers - INFO - User 1025203745: press /start;
+2020-05-15 21:22:10,859 - conversation.handlers - INFO - User 1025203745: fruit func;
+2020-05-15 21:22:16,621 - conversation.handlers - INFO - User 1025203745: sound func;
+2020-05-15 21:22:19,656 - conversation.handlers - INFO - User 1025203745: animal func;
+2020-05-15 21:22:25,094 - conversation.handlers - INFO - User 1025203745: stickers func;
+2020-05-15 21:22:29,221 - conversation.handlers - INFO - User 1025203745: stickers_yes func;
+2020-05-15 21:22:29,363 - conversation.handlers - INFO - User 1025203745: consent func;
+2020-05-15 21:23:11,950 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:23:16,383 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:24:16,588 - conversation.handlers - INFO - User 81745542: press /start;
+2020-05-15 21:24:18,898 - conversation.handlers - INFO - User 81745542: fruit func;
+2020-05-15 21:24:29,706 - conversation.handlers - INFO - User 81745542: sound func;
+2020-05-15 21:24:33,565 - conversation.handlers - INFO - User 81745542: animal func;
+2020-05-15 21:24:38,711 - conversation.handlers - INFO - User 81745542: stickers func;
+2020-05-15 21:24:42,301 - conversation.handlers - INFO - User 81745542: stickers_yes func;
+2020-05-15 21:24:42,420 - conversation.handlers - INFO - User 81745542: consent func;
+2020-05-15 21:25:55,341 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-15 21:26:00,177 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-15 21:26:01,978 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-15 21:26:03,526 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-15 21:26:04,528 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-15 21:26:05,296 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-15 21:26:05,424 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-15 21:26:19,872 - conversation.handlers - INFO - User 332789117: press /start;
+2020-05-15 21:26:23,426 - conversation.handlers - INFO - User 197558931: press /start;
+2020-05-15 21:26:25,946 - conversation.handlers - INFO - User 332789117: fruit func;
+2020-05-15 21:26:29,659 - conversation.handlers - INFO - User 197558931: fruit func;
+2020-05-15 21:26:33,114 - conversation.handlers - INFO - User 332789117: sound func;
+2020-05-15 21:26:33,267 - conversation.handlers - INFO - User 168213842: press /start;
+2020-05-15 21:26:34,792 - conversation.handlers - INFO - User 197558931: sound func;
+2020-05-15 21:26:35,346 - conversation.handlers - INFO - User 168213842: fruit func;
+2020-05-15 21:26:40,760 - conversation.handlers - INFO - User 168213842: sound func;
+2020-05-15 21:26:42,676 - conversation.handlers - INFO - User 332789117: animal func;
+2020-05-15 21:26:42,841 - conversation.handlers - INFO - User 197558931: animal func;
+2020-05-15 21:26:44,151 - conversation.handlers - INFO - User 168213842: animal func;
+2020-05-15 21:26:47,545 - conversation.handlers - INFO - User 332789117: stickers func;
+2020-05-15 21:26:47,672 - conversation.handlers - INFO - User 168213842: stickers func;
+2020-05-15 21:26:51,396 - conversation.handlers - INFO - User 332789117: stickers_yes func;
+2020-05-15 21:26:51,528 - conversation.handlers - INFO - User 332789117: consent func;
+2020-05-15 21:26:55,735 - conversation.handlers - INFO - User 197558931: stickers func;
+2020-05-15 21:26:56,974 - conversation.handlers - INFO - User 168213842: stickers_no func;
+2020-05-15 21:26:57,108 - conversation.handlers - INFO - User 168213842: consent func;
+2020-05-15 21:26:59,716 - conversation.handlers - INFO - User 197558931: stickers_yes func;
+2020-05-15 21:26:59,852 - conversation.handlers - INFO - User 197558931: consent func;
+2020-05-15 21:27:56,558 - conversation.handlers - INFO - User 16589165: current_mood func;
+2020-05-15 21:28:03,358 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 21:28:11,214 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-15 21:29:01,647 - conversation.handlers - INFO - User 49138131: current_mood func;
+2020-05-15 21:29:13,249 - conversation.handlers - INFO - User 49138131: press /start;
+2020-05-15 21:30:10,333 - conversation.handlers - INFO - User 160988389: press /start;
+2020-05-15 21:30:12,880 - conversation.handlers - INFO - User 160988389: fruit func;
+2020-05-15 21:30:21,072 - conversation.handlers - INFO - User 160988389: sound func;
+2020-05-15 21:30:24,259 - conversation.handlers - INFO - User 160988389: animal func;
+2020-05-15 21:30:29,184 - conversation.handlers - INFO - User 160988389: stickers func;
+2020-05-15 21:30:40,304 - conversation.handlers - INFO - User 160988389: stickers_no func;
+2020-05-15 21:30:40,522 - conversation.handlers - INFO - User 160988389: consent func;
+2020-05-15 21:30:54,930 - conversation.handlers - INFO - User 636095: press /start;
+2020-05-15 21:30:57,265 - conversation.handlers - INFO - User 636095: fruit func;
+2020-05-15 21:31:21,212 - conversation.handlers - INFO - User 636095: sound func;
+2020-05-15 21:31:28,763 - conversation.handlers - INFO - User 636095: animal func;
+2020-05-15 21:31:33,973 - conversation.handlers - INFO - User 636095: stickers func;
+2020-05-15 21:31:37,392 - conversation.handlers - INFO - User 636095: stickers_yes func;
+2020-05-15 21:31:37,513 - conversation.handlers - INFO - User 636095: consent func;
+2020-05-15 21:38:36,303 - conversation.handlers - INFO - User 328493121: press /start;
+2020-05-15 21:38:39,333 - conversation.handlers - INFO - User 328493121: fruit func;
+2020-05-15 21:38:44,466 - conversation.handlers - INFO - User 328493121: sound func;
+2020-05-15 21:38:48,950 - conversation.handlers - INFO - User 328493121: animal func;
+2020-05-15 21:38:54,518 - conversation.handlers - INFO - User 328493121: stickers func;
+2020-05-15 21:39:18,740 - conversation.handlers - INFO - User 328493121: stickers_yes func;
+2020-05-15 21:39:18,860 - conversation.handlers - INFO - User 328493121: consent func;
+2020-05-15 21:40:48,639 - conversation.handlers - INFO - User 146100437: press /start;
+2020-05-15 21:40:52,765 - conversation.handlers - INFO - User 146100437: fruit func;
+2020-05-15 21:40:57,721 - conversation.handlers - INFO - User 146100437: sound func;
+2020-05-15 21:40:59,697 - conversation.handlers - INFO - User 122885564: press /start;
+2020-05-15 21:41:00,870 - conversation.handlers - INFO - User 146100437: animal func;
+2020-05-15 21:41:03,376 - conversation.handlers - INFO - User 146100437: stickers func;
+2020-05-15 21:41:06,556 - conversation.handlers - INFO - User 122885564: fruit func;
+2020-05-15 21:41:06,749 - conversation.handlers - INFO - User 146100437: stickers_yes func;
+2020-05-15 21:41:06,935 - conversation.handlers - INFO - User 146100437: consent func;
+2020-05-15 21:41:15,996 - conversation.handlers - INFO - User 1055690376: press /start;
+2020-05-15 21:41:22,481 - conversation.handlers - INFO - User 1055690376: fruit func;
+2020-05-15 21:41:23,503 - conversation.handlers - INFO - User 122885564: sound func;
+2020-05-15 21:41:29,585 - conversation.handlers - INFO - User 1055690376: sound func;
+2020-05-15 21:41:35,954 - conversation.handlers - INFO - User 1055690376: animal func;
+2020-05-15 21:41:36,487 - conversation.handlers - INFO - User 122885564: animal func;
+2020-05-15 21:41:39,034 - conversation.handlers - INFO - User 1055690376: stickers func;
+2020-05-15 21:41:41,650 - conversation.handlers - INFO - User 11562898: press /start;
+2020-05-15 21:41:42,419 - conversation.handlers - INFO - User 1055690376: stickers_yes func;
+2020-05-15 21:41:42,536 - conversation.handlers - INFO - User 1055690376: consent func;
+2020-05-15 21:41:44,713 - conversation.handlers - INFO - User 11562898: fruit func;
+2020-05-15 21:41:47,341 - conversation.handlers - INFO - User 122885564: stickers func;
+2020-05-15 21:41:50,130 - conversation.handlers - INFO - User 11562898: sound func;
+2020-05-15 21:41:59,379 - conversation.handlers - INFO - User 11562898: animal func;
+2020-05-15 21:42:07,036 - conversation.handlers - INFO - User 11562898: stickers func;
+2020-05-15 21:42:11,125 - conversation.handlers - INFO - User 11562898: stickers_yes func;
+2020-05-15 21:42:11,289 - conversation.handlers - INFO - User 11562898: consent func;
+2020-05-15 21:42:11,573 - conversation.handlers - INFO - User 1055690376: press /start;
+2020-05-15 21:42:13,817 - conversation.handlers - INFO - User 1055690376: fruit func;
+2020-05-15 21:42:16,048 - conversation.handlers - INFO - User 1055690376: sound func;
+2020-05-15 21:42:17,929 - conversation.handlers - INFO - User 1055690376: animal func;
+2020-05-15 21:42:18,005 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:42:19,716 - conversation.handlers - INFO - User 1055690376: stickers func;
+2020-05-15 21:42:19,831 - conversation.handlers - INFO - User 1055690376: consent func;
+2020-05-15 21:43:59,963 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:44:33,406 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:44:53,232 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:46:43,538 - conversation.handlers - INFO - User 293924647: press /start;
+2020-05-15 21:46:48,701 - conversation.handlers - INFO - User 293924647: fruit func;
+2020-05-15 21:46:57,295 - conversation.handlers - INFO - User 293924647: sound func;
+2020-05-15 21:47:03,823 - conversation.handlers - INFO - User 293924647: animal func;
+2020-05-15 21:47:07,911 - conversation.handlers - INFO - User 293924647: stickers func;
+2020-05-15 21:47:12,264 - conversation.handlers - INFO - User 293924647: stickers_yes func;
+2020-05-15 21:47:12,386 - conversation.handlers - INFO - User 293924647: consent func;
+2020-05-15 21:53:19,135 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:53:21,096 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 21:54:41,782 - conversation.handlers - INFO - User 503349398: press /start;
+2020-05-15 21:54:50,748 - conversation.handlers - INFO - User 503349398: fruit func;
+2020-05-15 21:54:59,852 - conversation.handlers - INFO - User 503349398: sound func;
+2020-05-15 21:55:05,492 - conversation.handlers - INFO - User 503349398: animal func;
+2020-05-15 21:55:11,424 - conversation.handlers - INFO - User 503349398: stickers func;
+2020-05-15 21:55:18,320 - conversation.handlers - INFO - User 503349398: stickers_yes func;
+2020-05-15 21:55:18,440 - conversation.handlers - INFO - User 503349398: consent func;
+2020-05-15 21:55:22,602 - conversation.handlers - INFO - User 1055690376: current_mood func;
+2020-05-15 21:55:27,747 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 33, in start
+    context.bot.send_message(chat_id=users[update.message.chat_id], text=msg_text)
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-15 21:55:34,383 - conversation.handlers - INFO - User 1055690376: press /start;
+2020-05-15 21:55:38,043 - conversation.handlers - INFO - User 1055690376: fruit func;
+2020-05-15 21:55:45,026 - conversation.handlers - INFO - User 1055690376: sound func;
+2020-05-15 21:55:47,436 - conversation.handlers - INFO - User 1055690376: animal func;
+2020-05-15 21:55:49,747 - conversation.handlers - INFO - User 1055690376: stickers func;
+2020-05-15 21:55:49,865 - conversation.handlers - INFO - User 1055690376: consent func;
+2020-05-15 21:56:23,494 - conversation.handlers - INFO - User 503349398: press /start;
+2020-05-15 21:56:38,475 - conversation.handlers - INFO - User 1055690376: press /start;
+2020-05-15 21:56:39,986 - conversation.payment - INFO - User 1055690376: try to subscribe;
+2020-05-15 21:56:47,561 - conversation.payment - INFO - User 1055690376: refused to subscribe;
+2020-05-15 21:56:56,399 - conversation.payment - INFO - User 1055690376: take other;
+2020-05-15 21:56:58,507 - conversation.payment - INFO - User 1055690376: sps_buy;
+2020-05-15 21:57:01,544 - conversation.payment - INFO - User 1055690376: try to subscribe;
+2020-05-15 21:58:02,281 - conversation.payment - INFO - User 1055690376: get Invoice on 3days;
+2020-05-15 21:58:06,086 - conversation.payment - INFO - User 1055690376: get Invoice on month;
+2020-05-15 21:58:09,458 - conversation.payment - INFO - User 1055690376: get Invoice on week;
+2020-05-15 21:58:14,129 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 22:02:58,124 - conversation.handlers - INFO - User 16589165: press /start;
+2020-05-15 22:04:52,802 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 22:19:09,380 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 47, in answer
+    #this shit fix problem with NONEchat_id shit
+AttributeError: 'NoneType' object has no attribute 'chat_id'
+2020-05-15 22:27:01,400 - conversation.handlers - INFO - User 28035107: current_mood func;
+2020-05-15 22:27:18,872 - conversation.handlers - INFO - User 28035107: press /start;
+2020-05-15 22:47:38,166 - conversation.handlers - INFO - User 68758887: current_mood func;
+2020-05-15 22:47:42,266 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-15 22:47:55,999 - conversation.handlers - INFO - User 332789117: current_mood func;
+2020-05-15 22:48:05,992 - conversation.handlers - INFO - User 332789117: press /start;
+2020-05-15 22:54:11,350 - conversation.handlers - INFO - User 170571898: press /start;
+2020-05-15 22:54:16,579 - conversation.handlers - INFO - User 170571898: fruit func;
+2020-05-15 22:54:22,635 - conversation.handlers - INFO - User 170571898: sound func;
+2020-05-15 22:54:30,128 - conversation.handlers - INFO - User 170571898: animal func;
+2020-05-15 22:54:37,591 - conversation.handlers - INFO - User 170571898: stickers func;
+2020-05-15 22:54:46,000 - conversation.handlers - INFO - User 170571898: stickers_yes func;
+2020-05-15 22:54:46,133 - conversation.handlers - INFO - User 170571898: consent func;
+2020-05-15 22:54:58,144 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 33, in start
+    context.bot.send_message(chat_id=users[update.message.chat_id], text=msg_text)
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-15 22:55:35,348 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 80, in done
+    elif chat_id in users:
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-16 00:56:59,284 - conversation.handlers - INFO - User 1437660: press /start;
+2020-05-16 00:57:06,259 - conversation.handlers - INFO - User 1437660: fruit func;
+2020-05-16 00:57:12,391 - conversation.handlers - INFO - User 1437660: sound func;
+2020-05-16 00:57:20,860 - conversation.handlers - INFO - User 1437660: animal func;
+2020-05-16 00:57:27,114 - conversation.handlers - INFO - User 1437660: stickers func;
+2020-05-16 00:57:31,919 - conversation.handlers - INFO - User 1437660: stickers_yes func;
+2020-05-16 00:57:32,040 - conversation.handlers - INFO - User 1437660: consent func;
+2020-05-16 02:52:56,910 - conversation.handlers - INFO - User 478208874: fruit func;
+2020-05-16 02:52:58,293 - conversation.handlers - INFO - User 478208874: sound func;
+2020-05-16 02:52:59,635 - conversation.handlers - INFO - User 478208874: animal func;
+2020-05-16 02:53:00,357 - conversation.handlers - INFO - User 478208874: stickers func;
+2020-05-16 02:53:00,477 - conversation.handlers - INFO - User 478208874: consent func;
+2020-05-16 04:51:12,121 - conversation.handlers - INFO - User 478208874: current_mood func;
+2020-05-16 05:03:50,198 - conversation.handlers - INFO - User 110563586: press /start;
+2020-05-16 05:03:57,550 - conversation.handlers - INFO - User 110563586: fruit func;
+2020-05-16 05:04:02,874 - conversation.handlers - INFO - User 110563586: sound func;
+2020-05-16 05:04:11,120 - conversation.handlers - INFO - User 110563586: animal func;
+2020-05-16 05:04:20,713 - conversation.handlers - INFO - User 110563586: stickers func;
+2020-05-16 05:04:25,162 - conversation.handlers - INFO - User 110563586: stickers_yes func;
+2020-05-16 05:04:25,287 - conversation.handlers - INFO - User 110563586: consent func;
+2020-05-16 05:26:26,181 - conversation.handlers - INFO - User 136200992: press /start;
+2020-05-16 05:26:40,306 - conversation.handlers - INFO - User 136200992: fruit func;
+2020-05-16 05:26:46,643 - conversation.handlers - INFO - User 136200992: sound func;
+2020-05-16 05:26:52,663 - conversation.handlers - INFO - User 136200992: animal func;
+2020-05-16 05:26:55,103 - conversation.handlers - INFO - User 136200992: stickers func;
+2020-05-16 05:26:58,976 - conversation.handlers - INFO - User 136200992: stickers_yes func;
+2020-05-16 05:26:59,097 - conversation.handlers - INFO - User 136200992: consent func;
+2020-05-16 05:42:19,415 - conversation.handlers - INFO - User 304207345: press /start;
+2020-05-16 05:42:20,071 - conversation.handlers - INFO - User 713608552: press /start;
+2020-05-16 05:42:23,263 - conversation.handlers - INFO - User 304207345: fruit func;
+2020-05-16 05:42:23,664 - conversation.handlers - INFO - User 713608552: fruit func;
+2020-05-16 05:42:25,816 - conversation.handlers - INFO - User 713608552: sound func;
+2020-05-16 05:42:26,611 - conversation.handlers - INFO - User 713608552: animal func;
+2020-05-16 05:42:27,412 - conversation.handlers - INFO - User 713608552: stickers func;
+2020-05-16 05:42:28,167 - conversation.handlers - INFO - User 713608552: stickers_no func;
+2020-05-16 05:42:28,282 - conversation.handlers - INFO - User 713608552: consent func;
+2020-05-16 05:42:29,991 - conversation.handlers - INFO - User 304207345: sound func;
+2020-05-16 05:42:38,123 - conversation.handlers - INFO - User 304207345: animal func;
+2020-05-16 05:42:42,673 - conversation.handlers - INFO - User 304207345: stickers func;
+2020-05-16 05:42:46,034 - conversation.handlers - INFO - User 304207345: stickers_yes func;
+2020-05-16 05:42:46,154 - conversation.handlers - INFO - User 304207345: consent func;
+2020-05-16 05:43:14,679 - conversation.handlers - INFO - User 105103750: press /start;
+2020-05-16 05:43:18,691 - conversation.handlers - INFO - User 105103750: fruit func;
+2020-05-16 05:43:26,300 - conversation.handlers - INFO - User 105103750: sound func;
+2020-05-16 05:43:29,882 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/chat.py", line 80, in done
+    elif chat_id in users:
+  File "<decorator-gen-2>", line 2, in send_message
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 70, in decorator
+    result = func(*args, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 351, in send_message
+    timeout=timeout, **kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/bot.py", line 178, in _message
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/utils/request.py", line 243, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Forbidden: bot was blocked by the user
+2020-05-16 05:43:32,360 - conversation.handlers - INFO - User 105103750: animal func;
+2020-05-16 05:43:49,940 - conversation.handlers - INFO - User 105103750: stickers func;
+2020-05-16 05:43:54,647 - conversation.handlers - INFO - User 105103750: stickers_yes func;
+2020-05-16 05:43:54,782 - conversation.handlers - INFO - User 105103750: consent func;
+2020-05-16 07:33:56,373 - conversation.handlers - INFO - User 152575435: press /start;
+2020-05-16 07:34:54,721 - conversation.handlers - INFO - User 152575435: fruit func;
+2020-05-16 07:35:01,056 - conversation.handlers - INFO - User 152575435: sound func;
+2020-05-16 07:35:05,136 - conversation.handlers - INFO - User 152575435: animal func;
+2020-05-16 07:35:08,546 - conversation.handlers - INFO - User 152575435: stickers func;
+2020-05-16 07:35:12,345 - conversation.handlers - INFO - User 152575435: stickers_no func;
+2020-05-16 07:35:12,476 - conversation.handlers - INFO - User 152575435: consent func;
+2020-05-16 07:49:42,589 - conversation.handlers - INFO - User 201010403: current_mood func;
+2020-05-16 07:49:46,226 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/dispatcher.py", line 343, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/conversationhandler.py", line 465, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/ec2-user/telegram/LAMPA/venv/lib64/python3.6/site-packages/telegram/ext/handler.py", line 119, in handle_update
+    return self.callback(update, context)
+  File "/home/ec2-user/telegram/LAMPA/lampa-bot/conversation/handlers.py", line 134, in to_google_sheet
+    answers = [google_answers['why_leave'][answers[-2]],
+KeyError: 'Другое'
+2020-05-16 08:09:48,706 - conversation.handlers - INFO - User 190221502: press /start;
+2020-05-16 08:09:51,973 - conversation.handlers - INFO - User 190221502: fruit func;
+2020-05-16 08:10:00,603 - conversation.handlers - INFO - User 190221502: sound func;
+2020-05-16 08:10:08,324 - conversation.handlers - INFO - User 190221502: animal func;
+2020-05-16 08:10:16,593 - conversation.handlers - INFO - User 190221502: stickers func;
+2020-05-16 08:10:23,848 - conversation.handlers - INFO - User 190221502: stickers_yes func;
+2020-05-16 08:10:23,974 - conversation.handlers - INFO - User 190221502: consent func;
+2020-05-16 08:17:22,179 - conversation.handlers - INFO - User 1437660: current_mood func;
+2020-05-16 08:26:13,951 - conversation.handlers - INFO - User 368150723: press /start;
+2020-05-16 08:26:16,423 - conversation.handlers - INFO - User 368150723: fruit func;
+2020-05-16 08:26:23,950 - conversation.handlers - INFO - User 368150723: sound func;
+2020-05-16 08:26:29,712 - conversation.handlers - INFO - User 368150723: animal func;
+2020-05-16 08:26:34,288 - conversation.handlers - INFO - User 368150723: stickers func;
+2020-05-16 08:26:38,663 - conversation.handlers - INFO - User 368150723: stickers_yes func;
+2020-05-16 08:26:38,809 - conversation.handlers - INFO - User 368150723: consent func;
+2020-05-16 08:55:24,036 - conversation.handlers - INFO - User 39114746: press /start;
+2020-05-16 08:55:31,594 - conversation.handlers - INFO - User 39114746: fruit func;
+2020-05-16 08:55:40,243 - conversation.handlers - INFO - User 39114746: sound func;
+2020-05-16 08:55:48,260 - conversation.handlers - INFO - User 39114746: animal func;
+2020-05-16 08:55:53,616 - conversation.handlers - INFO - User 39114746: stickers func;
+2020-05-16 08:55:57,994 - conversation.handlers - INFO - User 39114746: stickers_yes func;
+2020-05-16 08:55:58,135 - conversation.handlers - INFO - User 39114746: consent func;
+2020-05-16 10:09:31,831 - conversation.handlers - INFO - User 479463567: press /start;
+2020-05-16 10:09:34,552 - conversation.handlers - INFO - User 479463567: fruit func;
+2020-05-16 10:09:42,363 - conversation.handlers - INFO - User 479463567: sound func;
+2020-05-16 10:09:51,005 - conversation.handlers - INFO - User 479463567: animal func;
+2020-05-16 10:09:59,586 - conversation.handlers - INFO - User 479463567: stickers func;
+2020-05-16 10:10:04,807 - conversation.handlers - INFO - User 479463567: stickers_yes func;
+2020-05-16 10:10:04,936 - conversation.handlers - INFO - User 479463567: consent func;
+2020-05-16 10:36:10,941 - conversation.handlers - INFO - User 263411297: press /start;
+2020-05-16 10:36:15,126 - conversation.handlers - INFO - User 263411297: fruit func;
+2020-05-16 10:37:27,516 - conversation.handlers - INFO - User 690590073: press /start;
+2020-05-16 10:37:32,265 - conversation.handlers - INFO - User 690590073: fruit func;
+2020-05-16 10:37:44,161 - conversation.handlers - INFO - User 690590073: sound func;
+2020-05-16 10:37:48,948 - conversation.handlers - INFO - User 690590073: animal func;
+2020-05-16 10:37:52,500 - conversation.handlers - INFO - User 690590073: stickers func;
+2020-05-16 10:37:58,793 - conversation.handlers - INFO - User 690590073: stickers_yes func;
+2020-05-16 10:37:58,910 - conversation.handlers - INFO - User 690590073: consent func;
+2020-05-16 11:03:06,816 - conversation.handlers - INFO - User 68758887: press /start;
+2020-05-16 11:03:08,297 - conversation.handlers - INFO - User 68758887: fruit func;
+2020-05-16 11:03:09,310 - conversation.handlers - INFO - User 68758887: sound func;
+2020-05-16 11:03:10,281 - conversation.handlers - INFO - User 68758887: animal func;
+2020-05-16 11:03:11,551 - conversation.handlers - INFO - User 68758887: stickers func;
+2020-05-16 11:03:11,674 - conversation.handlers - INFO - User 68758887: consent func;
+2020-05-16 12:40:20,762 - conversation.handlers - INFO - User 479463567: current_mood func;
+2020-05-16 12:40:40,466 - conversation.handlers - INFO - User 479463567: press /start;
+2020-05-16 12:40:44,211 - conversation.handlers - INFO - User 479463567: fruit func;
+2020-05-16 12:40:46,783 - conversation.handlers - INFO - User 479463567: sound func;
+2020-05-16 12:40:50,976 - conversation.handlers - INFO - User 479463567: animal func;
+2020-05-16 12:40:53,903 - conversation.handlers - INFO - User 479463567: stickers func;
+2020-05-16 12:40:54,043 - conversation.handlers - INFO - User 479463567: consent func;
