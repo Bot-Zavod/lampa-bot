@@ -32,9 +32,9 @@ def noSubscription(update, context):
 	"""
 	
 	currency = currency_rub()
-	day = InlineKeyboardButton(text=f"3 дня {1*currency}", callback_data="3days")
-	week = InlineKeyboardButton(text=f"Неделя {2*currency}", callback_data="week")
-	month = InlineKeyboardButton(text=f"Месяц {4*currency}", callback_data="month")
+	day = InlineKeyboardButton(text=f"3 дня - {1*currency} RUB", callback_data="3days")
+	week = InlineKeyboardButton(text=f"Неделя - {2*currency} RUB", callback_data="week")
+	month = InlineKeyboardButton(text=f"Месяц - {4*currency} RUB", callback_data="month")
 	no_sps = InlineKeyboardButton(text="Не сейчас", callback_data="no_sps")
 	reply_markup = InlineKeyboardMarkup([[day],[week],[month],[no_sps]])
 
