@@ -25,6 +25,7 @@ CONVERSATION = range(1)
 def start(update, context):
     DB.insertNewPass(update.message.chat_id)
     update.message.reply_text(connection_text, reply_markup=ReplyKeyboardRemove())
+    update.message.reply_text(text = searching)
     if not update.message.chat_id in lobby:
         lobby.append(update.message.chat_id)
     if connect():
@@ -46,36 +47,38 @@ def connect():
 def answer(update, context):
     #this shit fix problem with NONEchat_id shit
     update = update.callback_query if update.callback_query else update
-    if update.message.chat_id in users:
+    chat_id = update.message.chat.id or update.message.chat_id 
+    if chat_id in users:
         context.bot.send_message(
-            chat_id=users[update.message.chat_id], text=update.message.text
+            chat_id=users[chat_id], text=update.message.text
         )
     else:
         context.bot.send_message(
-            chat_id=update.message.chat_id,
-            text="Sorry, we didin`t find a companion for you yet",
+            chat_id=chat_id,
+            text=searching,
         )
     return None
 
 
 def stick_answer(update, context):
     sticker_id = update.message.sticker.file_id
-    if update.message.chat_id in users:
+    chat_id = update.message.chat.id or update.message.chat_id 
+    if chat_id in users:
         context.bot.send_sticker(
-            chat_id=users[update.message.chat_id], sticker=sticker_id
+            chat_id=users[chat_id], sticker=sticker_id
         )
     else:
         context.bot.send_message(
-            chat_id=update.message.chat_id,
+            chat_id=chat_id,
             text="Sorry, we didin`t find a companion for you yet",
         )
     return None
 
 
 def done(update, context):
-    chat_id = update.message.chat_id
+    chat_id = update.message.chat.id or update.message.chat_id
     if chat_id in lobby:
-        update.message.reply_text("leaving lobby")
+        update.message.reply_text(chat_finished_text)
         lobby.remove(chat_id)
     elif chat_id in users:
         update.message.reply_text(chat_finished_text)

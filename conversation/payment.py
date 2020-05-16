@@ -25,11 +25,16 @@ def terms(update, context):
 def noSubscription(update, context):
 	chat_id = update.message.chat.id
 
-	text = "Кажется.. Сегодня все lampa-тесты уже пройдены 😞\n"+\
-		   "Ты можешь поболтать с кем-то еще, купив lampa-подписку"
-	day = InlineKeyboardButton(text="3 дня", callback_data="3days")
-	week = InlineKeyboardButton(text="Неделя", callback_data="week")
-	month = InlineKeyboardButton(text="Месяц", callback_data="month")
+	text = """
+	Кажется.. Сегодня все lampa-тесты уже пройдены 😞
+
+	Ты можешь поболтать с кем-то еще, купив lampa-подписку
+	"""
+	
+	currency = currency_rub()
+	day = InlineKeyboardButton(text=f"3 дня {1*currency}", callback_data="3days")
+	week = InlineKeyboardButton(text=f"Неделя {2*currency}", callback_data="week")
+	month = InlineKeyboardButton(text=f"Месяц {4*currency}", callback_data="month")
 	no_sps = InlineKeyboardButton(text="Не сейчас", callback_data="no_sps")
 	reply_markup = InlineKeyboardMarkup([[day],[week],[month],[no_sps]])
 
@@ -99,7 +104,7 @@ def sps_buy(update, context):
 # sendInvoice
 def pay(update, context):
 	update = update.callback_query
-	currency = int(round(get('https://api.exchangeratesapi.io/latest?symbols=USD,RUB').json()['rates']['RUB']))
+	currency = currency_rub()
 	description = {
 		'3days':['Будет действовать в течение 3х дней 🦀', LabeledPrice("Subscribe on 3 days", 100*currency)], 
 		'week':['Будет действовать в течение недели 🐟', LabeledPrice("Subscribe on week", 200*currency)],
@@ -144,3 +149,8 @@ def cancel(update, context):
 	text = 'Готово!'
 	update.message.reply_text(text=text)
 	logger.info("User %s: cancel;", update.message.chat.id)
+
+def currency_rub():
+	fallback = get('https://api.exchangeratesapi.io/latest?symbols=USD,RUB').json()
+	currency = int(round(fallback['rates']['RUB']))
+	return currency
