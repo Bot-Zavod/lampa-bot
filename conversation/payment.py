@@ -17,8 +17,7 @@ logger = logging.getLogger(__name__)
 
 # terms or why we are not going to return money
 def terms(update, context):
-	text = "1. Денюжки мы не вернем, уж прости.\n2. Время стартует сразу после списания средств"
-	update.message.reply_text(text=text)
+	update.message.reply_text(text=terms_text)
 	logger.info("User %s: ask Terms;", update.message.chat.id)
 
 # ask dickhead to pay or die
@@ -29,6 +28,8 @@ def noSubscription(update, context):
 	Кажется.. Сегодня все lampa-тесты уже пройдены 😞
 
 	Ты можешь поболтать с кем-то еще, купив lampa-подписку
+
+	Условия прочитай по команде /terms
 	"""
 	
 	currency = currency_rub()

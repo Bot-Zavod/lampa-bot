@@ -1,5 +1,12 @@
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 
+terms_text = """
+lampa-бот - подбор анонимного собеседника для ламповой беседы от lampa company
+
+Если вдруг lampa-бот перестанет с тобой разговаривать или начнет вести себя непотребным образом - скажи ему "перестань, пожалуйста".
+Если он не перестанет - напиши @l_girll
+"""
+
 start_kb = [["Пройти lampa-тест"]]
 
 fruit_kb = [
