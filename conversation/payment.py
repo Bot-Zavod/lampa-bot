@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 # terms or why we are not going to return money
 def terms(update, context):
-	update.message.reply_text(text=terms_text)
+	update.message.reply_text(text=terms_text, disable_web_page_preview=True)
 	logger.info("User %s: ask Terms;", update.message.chat.id)
 
 # ask dickhead to pay or die

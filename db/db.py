@@ -153,10 +153,17 @@ class DBInterface:
 
     # return number of conversations
     def getConversationsCount(self) -> int:
-        sql = "SELECT COUNT(*) FROM Conversations"
+        sql = "SELECT COUNT(*) FROM Passes"
         self.execute_sql([sql])
         data = self.cursor.fetchall()[0][0]
-        return data
+        return data//2
+
+    # return number of unique users
+    def getTotalUsersCount(self) -> int:
+        sql = f"SELECT count(DISTINCT chat_id) FROM Passes"
+        self.execute_sql([sql])
+        users_quantity = self.cursor.fetchall()[0][0]      
+        return users_quantity
 
     # return list of users chat_id who passed the test
     def getAllUsersID(self, table="Passes") -> list:

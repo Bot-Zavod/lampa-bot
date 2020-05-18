@@ -100,14 +100,23 @@ def admin_menu(update, context):
             .format(sub_1=DB.getCountByTerm("3days"),
                     sub_2=DB.getCountByTerm("week"),
                     sub_3=DB.getCountByTerm("month"),
-                    dialogs=DB.getConversationsCount())
+                    dialogs=DB.getConversationsCount(),
+                    users = DB.getTotalUsersCount())
         update.message.reply_text(text=stats_result)
 
         #sending payments1(2).png
-        file1 = open(total_count(), 'rb')
-        file2 = open(all_payments_graph(), 'rb')
-        context.bot.send_photo(chat_id=update.effective_chat.id, photo=file1, caption='Кол-во всех платежей по популярности')
-        context.bot.send_photo(chat_id=update.effective_chat.id, photo=file2, caption='Кол-во всех платежей за все время')
+        path_file1 = total_count()
+        path_file2 = all_payments_graph()
+
+        context.bot.send_photo(chat_id=update.effective_chat.id, 
+                               photo=open(path_file1, 'rb'), 
+                               caption='Кол-во всех платежей по популярности')
+        context.bot.send_photo(chat_id=update.effective_chat.id, 
+                               photo=open(path_file2, 'rb'), 
+                               caption='Кол-во всех платежей за все время')
+        remove(path_file1)
+        remove(path_file2)
+        
         return admin(update, context)
     elif answer == admin_text["back"]:
         return start(update, context)
