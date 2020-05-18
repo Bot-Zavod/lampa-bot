@@ -175,6 +175,14 @@ class DBInterface:
         data = self.cursor.fetchall()[0][0]      
         return data
 
+    #return list of dates, using for admin statistics
+    def getDates(self):
+        sql = "SELECT date(create_date) FROM Payments"
+        self.execute_sql([sql])
+        data = self.cursor.fetchall()
+        return [x[0] for x in data]
+
+
 
 # setting up the database
 def start_database():

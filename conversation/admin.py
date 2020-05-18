@@ -8,6 +8,13 @@ from db import *
 from .constants import *
 from .handlers import start
 
+# for send_statisctics
+from os import getcwd
+import matplotlib.pyplot as plt
+from collections import Counter
+
+
+
 # for text that admin wants to send
 push_text_notification = None
 
@@ -39,6 +46,48 @@ def push_text(update, context):
     update.message.reply_text(text=msg, reply_markup=push_kb_markup)
     return States.PUSH_SUBMIT
 
+#generate statisctics files payments1(2).png return path to file
+def total_count():
+	days = DB.getCountByTerm("3days")
+	week = DB.getCountByTerm("week")
+	month = DB.getCountByTerm("month")
+
+	# test
+	#days, week, month = 12,34, 55
+
+	# First for payments
+	names = ['3day', 'week', 'month']
+	values = [days, week, month]
+	yint = range(0, max(values)+1 )
+
+	plt.figure(figsize=(15, 5))
+	plt.subplot(131)
+	plt.bar(names, values, color=['red','blue','green'])
+	plt.yticks(yint)
+	plt.title('Платежи')
+	plt.ylabel('Покупки')
+	plt.ylabel('Тип')
+	plt.savefig('payments1.png', bbox_inches='tight')
+	return getcwd() + '/payments1.png'
+
+def all_payments_graph():
+	arr = DB.getDates()
+	print(arr)
+	date = list(Counter(arr).keys())
+	values = list(Counter(arr).values())
+	yint = range(0, max(values)+1 )
+	# test
+	#date = ['2020-12-02', '2020-12-03', '2020-12-04', '2020-12-05', '2020-12-06']
+	#values = [13, 10, 22, 12, 22]
+
+	# Задать размер, по умолчанию сам выбирает
+	plt.figure(figsize=(10, 5))
+	plt.plot(date, values, color='red', linestyle='dashed', marker='.', markersize=5)
+	plt.ylabel('Покупки')
+	plt.yticks(yint)
+	plt.title('Все платежи')
+	plt.savefig('payments2.png', bbox_inches='tight')
+	return getcwd() + '/payments2.png'
 
 # handle answer from admin menu
 def admin_menu(update, context):
@@ -53,6 +102,12 @@ def admin_menu(update, context):
                     sub_3=DB.getCountByTerm("month"),
                     dialogs=DB.getConversationsCount())
         update.message.reply_text(text=stats_result)
+
+        #sending payments1(2).png
+        file1 = open(total_count(), 'rb')
+        file2 = open(all_payments_graph(), 'rb')
+        context.bot.send_photo(chat_id=update.effective_chat.id, photo=file1, caption='Кол-во всех платежей по популярности')
+        context.bot.send_photo(chat_id=update.effective_chat.id, photo=file2, caption='Кол-во всех платежей за все время')
         return admin(update, context)
     elif answer == admin_text["back"]:
         return start(update, context)
