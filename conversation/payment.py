@@ -7,6 +7,7 @@ from .states import States
 from spreadsheet import *
 from db import *
 from .constants import *
+from os import environ
 
 # Enable logging
 logging.basicConfig(
@@ -60,6 +61,7 @@ def no_sps(update, context):
 	logger.info("User %s: refused to subscribe;", chat_id)
 	return States.SUB_REFUSAL
 
+
 # why user do not want to pay
 def other(update, context):
 	chat_id = update.callback_query.message.chat.id
@@ -102,6 +104,7 @@ def sps_buy(update, context):
 	payment_refused(reason)
 	return States.FRUIT
 
+
 # sendInvoice
 def pay(update, context):
 	update = update.callback_query
@@ -116,11 +119,12 @@ def pay(update, context):
 		description=description[update.data][0],
 		payload=update.data,
 		start_parameter=update.data,
-		provider_token="381764678:TEST:16213",
+		provider_token=environ["provider_token"],
 		currency="RUB",
 		need_email=True,
 		prices=[description[update.data][1]])
 	logger.info("User %s: get Invoice on %s;", update.message.chat.id, update.data)
+
 
 # И это обработчик платежки
 def precheckout_callback(update, context):
