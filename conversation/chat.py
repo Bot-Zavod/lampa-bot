@@ -104,4 +104,6 @@ chat_handler = ConversationHandler(
     },
     fallbacks=[CommandHandler("stop", done)],
     map_to_parent={ConversationHandler.END: States.WHY_LEAVE,},
+    persistent=True,
+    name='chat'
 )
